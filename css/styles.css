@@ -1,0 +1,563 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  max-width: 1440px;
+  width: auto;
+  margin: auto 3%;
+  font-size: 13px;
+}
+
+.cached{
+  font-style: normal;
+  color: white;
+  margin-bottom: 50%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+  margin: 0 3.8% 0 3.8%;
+}
+
+nav {
+  margin-top: 7%;
+  position: relative;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 25px;
+  font-weight: 500;
+}
+nav a:hover {
+  border-top: 3px solid #0065fc;
+  padding-top: 1%;
+  color: #0065fc;
+}
+nav a:visited {
+  text-decoration: none;
+}
+.connexion {
+  color: #0065fc;
+  font-weight: bold;
+}
+.connexion:hover {
+  border-top: none;
+}
+main {
+  height: 1640px;
+}
+
+
+
+
+
+
+.blocartes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0%;
+}
+article{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2 1 100px;
+  max-height: 17%;
+}
+
+
+
+
+article:hover {
+  transform: scale(1.019);
+}
+
+
+
+
+
+
+
+
+
+.hebergement h2 {
+  font-size: 18px;
+  width: fit-content;
+  margin: 0 0 25px 0;
+}
+
+.hebergement h3 {
+  font-size: 18px;
+  padding-top: 5%; 
+}
+.hebergement p {
+  letter-spacing: 0.1px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  width: fit-content;
+  width: -moz-fit-content;
+  margin-top: 50px;
+}
+
+
+
+
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  width: 100%; /* three containers (use 25% for four, and 50% for two, etc) */
+  height: 100%;
+  padding: 15px; /* if you want space between the images */
+  
+}
+
+
+
+
+
+.blocartes article h3 {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 100%;
+}
+.description {
+  margin: 0 0 0 15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.bleu {
+  color: #0065fc;
+}
+.grise {
+  color: #f2f2f2;
+}
+
+/* footer */
+
+footer {
+  background-color: #f2f2f2;
+  margin: auto;
+  max-width: 1440px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 3.8% 0 3.8%;
+}
+footer section {
+  padding: 10px 10px;
+  width: 30%;
+}
+footer section h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+footer section p {
+  margin-top: 20px;
+  cursor: pointer;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+footer section p:hover {
+  border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobiles */
+@media screen and (max-width: 600px) {
+  .hebergement section {
+    padding: 30px;
+  }
+  .hebergement section .blocartes div {
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
+    height: 650px;
+    width: 100%;
+  }
+  .hebergement section .blocartes {
+    width: 100%;
+  }
+  .hebergement section .blocartes div article {
+    width: auto;
+  }
+  .partieFiltres {
+    height: 500px;
+  }
+  .filtres {
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .filtres div {
+    margin: 0;
+    font-size: 11px;
+  }
+  .filtres div span {
+    margin-left: 11px;
+  }
+  .activites {
+    height: 1360px;
+    margin: 45px 30px 0 30px;
+  }
+  .blocactivites {
+    height: 1275px;
+    flex-direction: column;
+  }
+  .premierblock,
+  .deuxiemeblock {
+    height: 622px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .grandecarte {
+    height: 190px;
+  }
+  .grandecarte img,
+  .doublecartepartie1 img,
+  .doublecartepartie2 img,
+  .doublecarte2partie1 img,
+  .doublecarte2partie2 img {
+    height: 74%;
+  }
+  .doublecarte {
+    height: 405px;
+    justify-content: space-between;
+  }
+  .doublecarte div {
+    height: 190px;
+  }
+  .blocactivites div article {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer section {
+    width: 80%;
+  }
+  .filtres div:nth-child(4) {
+    margin-left: 0px;
+  }
+  button span {
+    display: none;
+  }
+  .fa-search {
+    display: inline;
+  }
+  .map {
+    height: 50px;
+  }
+  button {
+    width: 55px;
+    border: none;
+    height: 50px;
+    border-radius: 16px 16px 16px 16px;
+  }
+  input {
+    height: 50px;
+    border: none;
+  }
+  form {
+    border: 2px solid #f2f2f2;
+    border-radius: 16px 16px 16px 16px;
+    border-right: none;
+    border-left: none;
+    height: 50px;
+    margin: 15px 0 17px 0;
+  }
+  header {
+    display: block;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    position: unset;
+    margin-top: 25px;
+  }
+  header nav a {
+    padding: 0 0 5px 0;
+    margin:0 0 15px 0;
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+    text-align: center;
+  }
+
+  header nav a:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: unset;
+    padding-top: 0;
+  }
+  .s_inscrire {
+    all: unset;
+    position: absolute;
+    top: 19px;
+    right: 0px;
+    width: unset;
+    color: #0065fc;
+    font-weight: bold;
+  }
+  .s_inscrire:hover {
+    all: unset;
+    border-top: none;
+    color: #0065fc;
+    font-weight: bold;
+    position: absolute;
+    top: 19px;
+    right: 0px;
+    width: unset;
+  }
+  .partieFiltres h1 {
+    margin-top: 20px;
+  }
+
+  aside div article div h3:nth-child(1) {
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-right: 8px;
+  }
+
+  .filtre2 {
+    position: relative;
+    right: -200px;
+    top: -55px;
+  }
+
+  .filtre3 {
+    position: relative;
+    top: -55px;
+  }
+  .filtre4 {
+    position: relative;
+    top: -55px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* mobiles */
+@media screen and (max-width: 400px) {
+  header {
+    width: fit-content;
+  }
+  
+  nav {
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: unset;
+    padding-top: 0;
+  }
+
+  .hebergement section {
+    padding: 30px;
+  }
+  .hebergement section .blocartes div {
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
+    height: 650px;
+    width: 100%;
+  }
+  .hebergement section .blocartes {
+    height: 1330px;
+    width: 100%;
+  }
+  .hebergement section .blocartes div article {
+    width: auto;
+  }
+  .partieFiltres {
+    height: 500px;
+  }
+  .filtres {
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .filtres div {
+    margin: 0;
+    font-size: 11px;
+  }
+  .filtres div span {
+    margin-left: 11px;
+  }
+  .activites {
+    height: 1360px;
+    margin: 45px 30px 0 30px;
+  }
+  .blocactivites {
+    height: 1275px;
+    flex-direction: column;
+  }
+  .premierblock,
+  .deuxiemeblock {
+    height: 622px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .grandecarte {
+    height: 190px;
+  }
+  .grandecarte img,
+  .doublecartepartie1 img,
+  .doublecartepartie2 img,
+  .doublecarte2partie1 img,
+  .doublecarte2partie2 img {
+    height: 74%;
+  }
+  .doublecarte {
+    height: 405px;
+    justify-content: space-between;
+  }
+  .doublecarte div {
+    height: 190px;
+  }
+  .blocactivites div article {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer section {
+    width: 80%;
+  }
+  .filtres div:nth-child(4) {
+    margin-left: 0px;
+  }
+  button span {
+    display: none;
+  }
+  .fa-search {
+    display: inline;
+  }
+  .map {
+    height: 50px;
+  }
+  button {
+    width: 55px;
+    border: none;
+    height: 50px;
+    border-radius: 16px 16px 16px 16px;
+  }
+  input {
+    height: 50px;
+    border: none;
+  }
+  form {
+    border: 2px solid #f2f2f2;
+    border-radius: 16px 16px 16px 16px;
+    border-right: none;
+    border-left: none;
+    height: 50px;
+    margin: 15px 0 17px 0;
+  }
+  header {
+    display: block;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    position: unset;
+    margin-top: 25px;
+  }
+  header nav a {
+    padding: 0 0 20px 0;
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+    text-align: center;
+  }
+
+  header nav a:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: unset;
+    padding-top: 0;
+  }
+  .s_inscrire {
+    all: unset;
+    position: absolute;
+    top: 19px;
+    right: 0px;
+    width: unset;
+    color: #0065fc;
+    font-weight: bold;
+  }
+  .s_inscrire:hover {
+    all: unset;
+    border-top: none;
+    color: #0065fc;
+    font-weight: bold;
+    position: absolute;
+    top: 19px;
+    right: 0px;
+    width: unset;
+  }
+  .partieFiltres h1 {
+    margin-top: 20px;
+  }
+
+  aside div article div h3:nth-child(1) {
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-right: 8px;
+  }
+
+  .filtre2 {
+    position: relative;
+    right: -200px;
+    top: -55px;
+  }
+
+  .filtre3 {
+    position: relative;
+    top: -55px;
+  }
+  .filtre4 {
+    position: relative;
+    top: -55px;
+  }
+}
+
