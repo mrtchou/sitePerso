@@ -5,23 +5,13 @@
   padding: 0%;
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: sans-serif;
   width: auto;
   margin: 3%;
   font-size: 13px;
   height: 100vh;
-
+  background-color: red;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -44,6 +34,7 @@ header {
   margin: 1%;
   position: relative;
   top: 0;
+
 }
 
 nav a {
@@ -93,6 +84,7 @@ main {
   top: 0%;
   border: 1px solid red;
   margin-left: 1%;
+
 }
 
 .grandeCartes{
@@ -100,7 +92,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0%;
-
+  border:3px solid rgb(0, 255, 4);
   margin-left: 1%;
 }
 
@@ -168,87 +160,3 @@ main {
 
 
 
-
-
-
-
-
-
-.description {
-  margin: 0 0 0 15px;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.bleu {
-  color: #0065fc;
-}
-.grise {
-  color: #f2f2f2;
-}
-
-/* footer */
-
-footer {
-  background-color: #f2f2f2;
-  margin: auto;
-  width: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 3.8% 0 3.8%;
-}
-footer section {
-  padding: 10px 10px;
-  width: 30%;
-}
-footer section h2 {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-footer section p {
-  margin-top: 20px;
-  cursor: pointer;
-  width: fit-content;
-}
-footer section p:hover {
-  border-bottom: 1px solid black;
-}
-
-
-
-
-.cached{
-  font-style: normal;
-  color: rgba(255, 255, 255, 0);
-  margin-bottom: 50%;
-}
-
-
-
-
-
-
-/* mobiles */
-@media screen and (max-width: 600px) {
-  html, body {
-    margin:0;
-    padding:0;
-    height:100%;
- }
-
-#main{
- 
-    min-height:100%;
-    position:relative;
-    padding-bottom:100px;   /* Hauteur du pied de page */
-
-}
-
-#footer{
-  background-color: red;
-  position:absolute;
-   bottom:0;  /* on le colle en bas */
-   width:100%;
-}
-
-}
