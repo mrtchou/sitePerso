@@ -1,20 +1,15 @@
-
 * {
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   width: auto;
   margin: 3%;
   font-size: 13px;
   height: 100vh;
-  background-color: red;
 }
-
-
-
 
 
 
@@ -24,17 +19,14 @@ a {
   color: black;
 }
 
-
-
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0%;
-  margin: 1%;
+  padding: 3%;
   position: relative;
   top: 0;
-
+  background-color: #0065fc;
 }
 
 nav a {
@@ -44,11 +36,10 @@ nav a {
   font-weight: 500;
 }
 nav a:hover {
-  border-top: 3px solid #0065fc;
+  border-top: 3px solid #6198ea;
   padding-top: 1%;
   color: #0065fc;
-  transform: scale(1.019);
-
+  transform: scale(2, 0.5);
 }
 
 nav a:visited {
@@ -67,24 +58,16 @@ nav a:visited {
 
 
 
-
-
-
-
 /*body */
-
 main {
   height: 100%;
   background-color: #d7dfef67;
 }
 
-
 .titlePage{
-  position: static;
   top: 0%;
-  border: 1px solid red;
   margin-left: 1%;
-
+  padding: 1%
 }
 
 .grandeCartes{
@@ -92,8 +75,6 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0%;
-  border:3px solid rgb(0, 255, 4);
-  margin-left: 1%;
 }
 
 .petiteCarte{
@@ -107,23 +88,15 @@ main {
   margin: 1%;
 }
 
-
 .petiteCarte:hover {
   transform: scale(1.019);
 }
 
-
 .petiteCarte img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   float: left;
   width: 100%; 
-  height: 100%;
-  padding: 15px;
-  border:3px solid red;
+  height:100%;
 }
-
 
 .petiteCarte h3 {
   font-size: 1rem;
@@ -135,28 +108,104 @@ main {
 
 
 
-
-
-
-.hebergement h2 {
-  font-size: 18px;
-  width: fit-content;
-  margin: 0 0 25px 0;
+/* footer */
+footer {
+  width: 100%;
+  background-color: #edc5c580;
 }
 
-.hebergement h3 {
-  font-size: 100%;
-  padding-top: 5%;
-  color: rgb(0, 0, 0);
+footer section {
+  padding: 10px 10px;
+  width: 30%;
 }
-.hebergement p {
-  letter-spacing: 0.1px;
-  font-size: 15px;
-  font-weight: 800;
+
+footer section h2 {
+  margin-bottom: 3%;
+  font-size: 1.2rem;
+}
+
+footer section p {
+  margin-top: 5%;
   cursor: pointer;
   width: fit-content;
-  margin-top: 50px;
+}
+
+footer section p:hover {
+  border-bottom: 1px solid black;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+/* mobiles */
+@media screen and (max-width: 600px) {
+ 
+  .grandecarte {
+    height: 190px;
+    padding-bottom: 55%;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobiles */
+@media screen and (max-width: 400px) {
+  header {
+    width: fit-content;
+  }
+  
+  nav {
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: unset;
+    padding-top: 0;
+  }
+
+  
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+ 
+}
