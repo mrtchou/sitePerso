@@ -1,4 +1,6 @@
-console.log('hello ssssworld');
 
-document.getElementsByClassName('titlePage')
 
+let laBoite = document.querySelector('.flip-card');
+laBoite.addEventListener('click', function () {
+    laBoite.classList.toggle('bouger');
+});
