@@ -1,6 +1,7 @@
+var cards = document.querySelectorAll('.card');
 
-
-let laBoite = document.querySelector('.flip-card');
-laBoite.addEventListener('click', function () {
-    laBoite.classList.toggle('bouger');
+[...cards].forEach((card) => {
+    card.addEventListener('click', function () {
+        card.classList.toggle('is-flipped');
+    });
 });
