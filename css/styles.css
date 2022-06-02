@@ -61,9 +61,11 @@ nav a:visited {
 
 
 
+
+
 /*body */
 main {
-  height: 100%;
+  height: 100vh;
   background-color: #e9edf467;
 }
 
@@ -81,15 +83,18 @@ main {
   align-items: center;
 }
 
+article{
+  height: 17vw;
+}
+
 .petiteCarte{
-  display: flex;
-  align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
   border-radius: 3%;
   margin: 1%;
-  height: 7%;
-  width: 45%;
+  width: 13vw;
+  height: 17vw;
+  border: 3px solid red;
 }
 
 .petiteCarte:hover {
@@ -98,15 +103,16 @@ main {
 }
 
 .petiteCarte img {
-border: 1px solid red;
   width: 100%; 
   border-radius: 3%;
 }
 
 .petiteCarte h3 {
   font-size: 1rem;
-  text-align: center;
-  padding-top: 100%;
+  color: red;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 13%;
 }
 
 .grandes{
@@ -132,8 +138,7 @@ border: 1px solid red;
 .scene {
   display: inline-block;
   width: 23vh;
-  height: 7vw;
-/*   border: 1px solid #CCC; */
+  height: 96px;
   perspective: 600px;
   margin: 1%;
 
@@ -149,9 +154,10 @@ border: 1px solid red;
   transition: transform 1s;
 }
 
-.card.is-flipped {
+.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
 }
+
 
 .card__face {
   position: absolute;
