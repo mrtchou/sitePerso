@@ -94,7 +94,6 @@ article{
   margin: 1%;
   width: 13vw;
   height: 17vw;
-  border: 3px solid red;
 }
 
 .petiteCarte:hover {
@@ -109,7 +108,7 @@ article{
 
 .petiteCarte h3 {
   font-size: 1rem;
-  color: red;
+  color: rgb(83, 72, 72);
   display: flex;
   justify-content: space-around;
   padding-top: 13%;
@@ -118,7 +117,6 @@ article{
 .grandes{
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 
 .image{
@@ -232,27 +230,20 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 10%;
-  align-items: center;
-}
-
-footer section {
   padding: 10px 10px;
-  width: 30%;
 }
 
-footer section h2 {
-  margin-bottom: 3%;
+footer h2 {
+  margin: 3%;
   font-size: 1.2rem;
 }
 
-footer section p {
-  margin-top: 5%;
+footer li {
+  margin: 5%;
   cursor: pointer;
-  width: fit-content;
 }
 
-footer section p:hover {
+footer li:hover {
   border-bottom: 1px solid black;
 }
 
