@@ -4,40 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="personnal pages test" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <script
-      src="https://kit.fontawesome.com/3ee1cc3628.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <title>TCH - vide</title>
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>TCH Home page</title>
+    <link rel="shortcut icon" type="image/png" href="" />
   </head>
 
   <body>
     <header>
+      <h1 class="titlePage">CSS</h1>
       <nav>
+        <nav>
         <a href="../index.html">Accueil</a>
-        <a href="./iris.html">Crypto</a>
-        <a href="./transport.html">Transports</a>
-        <a href="./bus.html">Bus</a>
-        <a href="./css.html">CSS</a>
-        <a href="./devweb.html">Dev</a>
-        <a href="./git.html">Git</a>
-        <a href="./html.html">Html</a>
-        <a href="./footer.html" class="connexion">Connexion</a>
+        <a href="./pages/iris.html">Crypto</a>
+        <a href="./pages/transport.html">Transports</a>
+        <a href="./pages/bus.html">Bus</a>
+        <a href="./pages/css.html">CSS</a>
+        <a href="./pages/devweb.html">Dev</a>
+        <a href="./pages/git.html">Git</a>
+        <a href="./pages/html.html">Html</a>
+        <a href="./pages/footer.html" class="connexion">Connexion</a>
       </nav>
     </header>
     <main id="main">
-      <div id="Hebergements" class="hebergement">
-        <section>
-          <h1 class="titlePage">vide</h1>
-          <div class="grandeCartes">
+      <section class="sommaire">
+        <h2>Sommaire :</h2>
+        <ol>
+          <li><a href="#cardReturnClick">Carte qui se retourne au click</a></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+      <section>
+        <div class="grandeCartes2">
+          <article class="">
+            <h3 id="cardReturnClick">Carte qui se retourne au click</h3>
             <div class="scene scene--card">
+              <h4>Demo:</h4>
               <div class="card">
                 <div class="card__face card__face--front">
                   <h3 id="flipCard">Carte retourne au click</h3>
@@ -46,90 +51,200 @@
                 <div class="card__face card__face--back">
                   <h4>Flip Carte (carte qui se retourne)</h4>
                   <button id="togg2">Cliquez-moi Cacher !</button>
-                  <p>
-                    .scene { display: inline-block; width: 23vh; height: 7vw; /*
-                    border: 1px solid #CCC; */ perspective: 600px; } .card {
-                    position: relative; width: 100%; height: 100%; cursor:
-                    pointer; transform-style: preserve-3d; transform-origin:
-                    center right; transition: transform 1s; } .card.is-flipped {
-                    transform: translateX(-100%) rotateY(-180deg); } .card__face
-                    { position: absolute; width: 100%; height: 100%; color:
-                    white; text-align: center; font-weight: bold; font-size:
-                    2vh; backface-visibility: hidden; } .card__face--front {
-                    background: crimson; } .card__face--back { background:
-                    slateblue; transform: rotateY(180deg); }
-                  </p>
-                  <div>AAAA</div>
                 </div>
               </div>
+              <p><h4>Partie HTML</h4>
+                <code> < div class="scene scene--card"><br/>
+                  < div class="card"><br/>
+                    < div class="card__face card__face--front"><br/>
+                      < h3 id="flipCard">Carte retourne au click< /h3><br/>
+                      < button id="togg1">Cliquez-moi Afficher !< /button><br/>
+                    </ div><br/>
+                    < div class="card__face card__face--back"><br/>
+                      < h4>Flip Carte (carte qui se retourne)< /h4><br/>
+                      < button id="togg2">Cliquez-moi Cacher !< /button><br/>
+                    < /div><br/>
+                  < /div>
+                </code>
+              </p>
+              <p><h4>Partie CSS</h4>
+                .scene { <br/>
+                display: inline-block;<br/>
+                width: 23vh;<br/>
+                height: 7vw;<br/>
+                perspective: 600px;<br/>
+                }<br/>
+                .card {<br/>
+                position: relative;<br/>
+                width: 100%;<br/>
+                height: 100%;<br/>
+                cursor: pointer; <br/>
+                transform-style: preserve-3d; <br/>
+                transform-origin: center right;<br/> 
+                transition: transform 1s; <br/>
+                } <br/>
+                .card.is-flipped {<br/>
+                transform: translateX(-100%) rotateY(-180deg);<br/>
+                }<br/>
+                .card__face { <br/>
+                position: absolute;<br/>
+                width: 100%;<br/>
+                height: 100%;<br/>
+                color: white;<br/>
+                text-align: center;<br/>
+                font-weight: bold;<br/>
+                font-size: 2vh;<br/>
+                backface-visibility: hidden; <br/>
+                }<br/>
+                .card__face--front {<br/>
+                background: crimson;<br/>
+                }<br/>
+                .card__face--back { <br/>
+                background: slateblue;<br/>
+                transform: rotateY(180deg);<br/>
+                }
+              </p>
             </div>
-            <article class="petiteCarte">
-              <a href="">
-                <img src="" alt="" />
-                <button id="togg1">Cliquez-moi !</button>
-                <button id="togg2">Cliquez-moi !</button>
-                <div id="d1">
-                  <p>Ce texte appartient au premier div de ma page</p>
-                  <p>Ce deuxième paragraphe également</p>
-                </div>
-                <div id="d2">
-                  <p>
-                    Il existe deux façons de cacher un élément
-                    <span>comme un div</span> en CSS :
-                  </p>
-                  <ul>
-                    <li>Utiliser visibility: hidden</li>
-                    <li>Utiliser display: none</li>
-                  </ul>
-                </div>
-              </a>
-            </article>
+          </article>
+          
 
-            <article class="petiteCarte">
-              <a href="">
-                <img
-                  src="../images/bulleCSS.png"
-                  alt="construction une bulle qui bouge en css"
-                />
-                <h3>une bulle dynamique qui bouge</h3>
-                <p>
-                  @keyframes morph { 0%, 100% { border-radius: 42% 56% 72% 28% /
-                  42% 42% 56% 48; } 33% { border-radius: 72% 28% 48% 48% / 28%
-                  28% 72% 72%; } 66% { border-radius: 100% 56% 56% 100% / 100%
-                  100% 56% 56%; } } header { overflow: hidden; width: 44%;
-                  height: 15%; border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-                  background: #8f44fd
-                  URL("https://ww.xtrafondos.com/wallpapers/glenwood-springs-en-colorado-6641.jpg");
-                  background-size: cover; background-position: center;
-                  animation: morph 3.75s linear infinite; }
-                </p>
-              </a>
-            </article>
+          <article class="">
+            <a href="">
+              <img
+                src="../images/bulleCSS.png"
+                alt="construction une bulle qui bouge en css"
+              />
+              <h3>une bulle dynamique qui bouge</h3>
+              <p>
+                @keyframes morph { 0%, 100% { border-radius: 42% 56% 72% 28% /
+                42% 42% 56% 48; } 33% { border-radius: 72% 28% 48% 48% / 28%
+                28% 72% 72%; } 66% { border-radius: 100% 56% 56% 100% / 100%
+                100% 56% 56%; } } header { overflow: hidden; width: 44%;
+                height: 15%; border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+                background: #8f44fd
+                URL("https://ww.xtrafondos.com/wallpapers/glenwood-springs-en-colorado-6641.jpg");
+                background-size: cover; background-position: center;
+                animation: morph 3.75s linear infinite; }
+              </p>
+            </a>
+          </article>
 
-            <article class="petiteCarte">
-              <a href="">
-                <img
-                  src="../images/bulleCSS.png"
-                  alt="construction une bulle qui bouge en css"
-                />
-                <h3>une bulle dynamique qui bouge</h3>
-                <p>
-                  @keyframes morph { 0%, 100% { border-radius: 42% 56% 72% 28% /
-                  42% 42% 56% 48; } 33% { border-radius: 72% 28% 48% 48% / 28%
-                  28% 72% 72%; } 66% { border-radius: 100% 56% 56% 100% / 100%
-                  100% 56% 56%; } } header { overflow: hidden; width: 44%;
-                  height: 15%; border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-                  background: #8f44fd
-                  URL("https://ww.xtrafondos.com/wallpapers/glenwood-springs-en-colorado-6641.jpg");
-                  background-size: cover; background-position: center;
-                  animation: morph 3.75s linear infinite; }
-                </p>
-              </a>
-            </article>
-          </div>
-        </section>
-      </div>
-    </main>
+          <article class="">
+            
+            Effet de glissement de texte avec CSS
+            partie html:
+            < div class="slide_effect">
+              < p class="slide_up">Subscribe to< /p>
+            
+              < p class="slide_down">Cules Coding< /p>
+            < /div>
+
+
+
+            partie css:
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            
+            html {
+              font-size: 62.5%;
+            }
+            
+            body {
+              height: 100vh;
+              display: grid;
+              place-items: center;
+              background-color: #202020;
+              font-family: "Roboto", sans-serif;
+            }
+            
+            .slide_effect {
+              color: white;
+              position: relative;
+              overflow: hidden;
+              font-size: 4rem;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
+            
+            .slide_up,
+            .slide_down {
+              position: relative;
+              opacity: 0;
+            }
+            
+            .slide_down {
+              top: -4rem;
+              animation: slideDown ease 0.5s forwards;
+            }
+            
+            .slide_up {
+              top: 4rem;
+              left: -1rem;
+              animation: slideUp ease 0.5s forwards;
+            }
+            
+            @keyframes slideUp {
+              0% {
+                transform: translateY(0);
+              }
+              100% {
+                transform: translateY(-4rem);
+                opacity: 1;
+              }
+            }
+            
+            @keyframes slideDown {
+              0% {
+                transform: translateY(0);
+              }
+              100% {
+                transform: translateY(4rem);
+                opacity: 1;
+              }
+            }
+
+
+
+            Explication:
+
+CSS est réinitialisé et certaines propriétés de base sont définies.
+.slide_uple texte est déplacé vers le bas de 4rem et le .slide_downtexte est déplacé vers le haut de 4rem.
+L'opacité est définie sur 0. Ainsi, le texte n'est pas visible au début.
+Nous créons des images clés pour l'animation.
+Sur 100% de l'animation, l'opacité est fixée à 1.
+Et aussi la transformation est définie sur translateY(-4rem)( .slide_up) andtranslateY(4rem) (.slide_down)`.
+Et c'est tout.
+          </article>
+        
+
+
+
+          
+        </div>
+
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer>
       <ul>
         <h2>Suivez moi</h2>
