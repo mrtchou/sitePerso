@@ -1,9 +1,9 @@
 const titreSpans = document.querySelectorAll('h1 span');
 const btns = document.querySelectorAll('.btn-first');
 const logo = document.querySelector('.logo');
-const medias = document.querySelectorAll('.bulle');
-const l1 = document.querySelector('.l1');
-const l2 = document.querySelector('.l2');
+const medias = document.querySelectorAll('.bulleSocialNetworks');
+const l1 = document.querySelector('.ligne1Deco');
+const l2 = document.querySelector('.ligne2Deco');
 
 window.addEventListener('load', () => {
 
@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
         .from(l1, 1, { width: 0, ease: "power2.out" }, '-=2')
         .from(l2, 1, { width: 0, ease: "power2.out" }, '-=2')
         .from(logo, 0.4, { transform: "scale(0)", ease: "power2.out" }, '-=2')
-        .staggerFrom(medias, 1, { right: -200, ease: "power2.out" }, 0.3, '-=1');
+        .staggerFrom(medias, 1, { left: -2000, ease: "power2.out" }, 0.3, '-=1');
 
 
 
