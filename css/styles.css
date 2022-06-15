@@ -822,3 +822,350 @@ footer section p:hover{
   }
 
 }
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  width: auto;
+  margin: 3%;
+  font-size: 13px;
+  height: 100vh;
+}
+
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3%;
+  position: relative;
+  top: 0;
+  background-color: #d4e2f7;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 25px;
+  font-weight: 500;
+}
+nav a:hover {
+  border-top: 3px solid #6198ea;
+  padding-top: 1%;
+  color: #0065fc;
+  transform: scale(2, 0.5);
+}
+
+nav a:visited {
+  text-decoration: none;
+}
+
+.connexion {
+  color: #0065fc;
+  font-weight: bold;
+}
+.connexion:hover {
+  border-top: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*body */
+main {
+  height: 100vh;
+  background-color: #e9edf467;
+}
+
+.titlePage{
+  top: 0%;
+  margin-left: 1%;
+  padding: 1%
+}
+
+#grandeCartes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0%;
+  align-items: center;
+}
+
+article{
+  height: 17vw;
+}
+
+.petiteCarte{
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3%;
+  margin: 1%;
+  width: 13vw;
+  height: 17vw;
+}
+
+.petiteCarte:hover {
+  transform: scale(1.019);
+  border: 1px solid rgb(234, 187, 187);
+}
+
+.petiteCarte img {
+  width: 100%; 
+  border-radius: 3%;
+}
+
+.petiteCarte h3 {
+  font-size: 1rem;
+  color: rgb(83, 72, 72);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 13%;
+}
+
+.grandes{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image{
+  flex: 1 1 120px;
+  aspect-ratio: 1 / 1;
+}
+
+.content{
+  flex: 1 1 200px;
+}
+
+
+
+
+
+/*PETITE - SMALL card */
+.scene {
+  display: inline-block;
+  width: 23vh;
+  height: 96px;
+  perspective: 600px;
+  margin: 1%;
+
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2vh;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: crimson;
+}
+
+.card__face--back {
+  background: slateblue;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Page Crypto */
+.cryptoNom{
+  text-align: center;
+  padding: 7%;
+}
+
+.cryptoQuantite{
+  text-align: center;
+  padding: 13%;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #edc5c580;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 10px;
+}
+
+footer h2 {
+  margin: 3%;
+  font-size: 1.2rem;
+}
+
+footer li {
+  margin: 5%;
+  cursor: pointer;
+}
+
+footer li:hover {
+  border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobiles */
+@media screen and (max-width: 600px) {
+ 
+  .grandecarte {
+    height: 190px;
+    padding-bottom: 55%;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobiles */
+@media screen and (max-width: 400px) {
+  header {
+    width: fit-content;
+  }
+  
+  nav {
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: unset;
+    padding-top: 0;
+  }
+
+  
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+ 
+}

@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
 })
 
 
-
+/* menu navbar media queries */
 const btnRes = document.querySelector('.btn-responsive-menu');
 const liste = document.querySelector('.liste-nav');
 const items = document.querySelectorAll('.item')
@@ -44,3 +44,11 @@ items.forEach(item => {
 
     })
 })
+
+
+
+
+
+
+
+

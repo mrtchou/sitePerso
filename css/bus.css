@@ -8,13 +8,19 @@ body {
     background: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    background: url('../images/background/background4.jpg');
+    background-size: cover;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+
+    position: relative;
 }
 
 
 main{
-    background: url('../images/background4.jpg');
-    background-size: cover;
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
@@ -131,6 +137,11 @@ h1 span {
 
 
 /* DEBUT partie navbar menu navigation */
+.navbar{
+display: flex;
+align-items: stretch;
+}
+
 
 nav {
     width: 100%;
@@ -142,6 +153,7 @@ nav {
 
 nav a{
     text-decoration: none;
+    color: rgb(97, 63, 63);
 }
 .liste-nav {
     list-style-type: none;
@@ -219,18 +231,38 @@ nav a{
     transform: rotate(-135deg)
 }
 
+.connexion{
+    align-self: flex-end;
+}
 
 
 
-/* partie contact */
+
+
+
+
+
+
+
+
+
+
+/* partie main content*/
 .content{
     position: relative;
-    top: 112vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
     background-color: #ffffff;
+}
+
+.contentMain{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
 }
 
 .contentContainer{
@@ -239,13 +271,53 @@ nav a{
     height: 19em;
     margin-right: 1%;
     margin-left: 1%;
-    margin-bottom: 5%;
+    margin-bottom: 1em;
     margin-top: 5%;
     padding-left: 2em;
     padding-top: 1em;
     padding-right: 2em;
-    cursor: pointer;
 }
+
+
+.contentContainer ul li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.contentContainer ul li:hover{
+    color: rgb(28, 112, 84);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -254,17 +326,21 @@ nav a{
 
 footer{
     bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
-    height: 150px;
+    height: auto;
     width: 100%;   
     background: #f1f1f1;
     position: relative;
     margin-top: 10%;
-    overflow: hidden;
+    padding: 1.3em;
 }
 
+
+
 footer ul{
-  padding: 2%;
   text-decoration: none;
 }
 
@@ -274,16 +350,24 @@ footer ul li{
 }
 footer ul li span{
     padding-left:  1em;
-    padding-right:  1em;
+   
 }
 footer ul li i{
     width: 1em;
     margin-right: 1em;
+    
 }
 
 footer ul p{
-    padding-bottom: 3%;
+    padding-bottom: 1.3em;
+    
+    font-weight: 700;
 }
+
+
+
+
+
 
 
 
