@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
         .from(l1, 1, { width: 0, ease: "power2.out" }, '-=2')
         .from(l2, 1, { width: 0, ease: "power2.out" }, '-=2')
         .from(logo, 0.4, { transform: "scale(0)", ease: "power2.out" }, '-=2')
-        .staggerFrom(medias, 1, { left: -2000, ease: "power2.out" }, 0.3, '-=1');
+        .staggerFrom(medias, 3, { left: -2000, ease: "power2.out" }, 0.3, '-=1');
 
 
 
