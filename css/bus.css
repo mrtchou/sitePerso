@@ -54,6 +54,8 @@ h1 span {
 .container-btns {
     position: relative;
     top: 29vh;
+    text-decoration: none;
+
 }
 
 
@@ -347,6 +349,7 @@ footer ul{
 footer ul li{
     list-style-type:none;
     padding-bottom: 1em;
+    
 }
 footer ul li span{
     padding-left:  1em;
