@@ -292,6 +292,18 @@ nav a{
     padding-bottom: 5px;
     cursor: pointer;
     list-style: none;
+    
+}
+
+.contentContainer ul{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    cursor: pointer;
+    list-style: none;
+
+
 }
 
 .contentContainer ul li:hover{
@@ -301,13 +313,21 @@ nav a{
 .contentContainer div{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
 
 
 
 .contentContainer h4{
     text-align: center;
     color: #060606;
+    padding-bottom: 2em;
+}
+
+
+.priceService{
+    text-align: center;
+    font-size: 1.5em;
 }
 
 
