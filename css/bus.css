@@ -290,7 +290,6 @@ nav a{
 .contentContainer ul li{
     padding-top: 5px;
     padding-bottom: 5px;
-    cursor: pointer;
     list-style: none;
     
 }
@@ -300,21 +299,20 @@ nav a{
     padding-bottom: 5px;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    cursor: pointer;
     list-style: none;
 
 
-}
-
-.contentContainer ul li:hover{
-    color: rgb(28, 112, 84);
 }
 
 .contentContainer div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
+.contentContainer div ul:hover{
+    color: rgb(28, 112, 84);
+    transition: width 1s linear, height 2s linear;}
 
 
 
@@ -322,12 +320,26 @@ nav a{
     text-align: center;
     color: #060606;
     padding-bottom: 2em;
+    font-size: 1.2em;
+
 }
+
+.contentContainer h5{
+    text-align: center;
+    color: #060606;
+    font-size: 1em;
+}
+.contentContainer{
+    text-decoration: none;
+de
+}
+
 
 
 .priceService{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 0.9em;
+    font-style: italic;
 }
 
 
