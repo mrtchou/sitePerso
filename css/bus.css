@@ -312,7 +312,16 @@ nav a{
 }
 .contentContainer div ul:hover{
     color: rgb(28, 112, 84);
-    transition: width 1s linear, height 2s linear;}
+    cursor: pointer;    
+}
+
+
+.hover li:hover{
+    color: rgb(40, 155, 116);
+    cursor: pointer;    
+    font-weight: 700;
+}
+
 
 
 
@@ -329,10 +338,7 @@ nav a{
     color: #060606;
     font-size: 1em;
 }
-.contentContainer{
-    text-decoration: none;
-de
-}
+
 
 
 
