@@ -27,7 +27,6 @@ main{
 
 
 
-
 .anchor{
     display: block;
     height: 60px; /*same height as header*/
@@ -283,8 +282,9 @@ nav a{
     padding-left: 2em;
     padding-top: 1em;
     padding-right: 2em;
-    
 }
+
+
 
 
 .contentContainer ul li{
@@ -300,16 +300,17 @@ nav a{
     padding-left: 1.5em;
     padding-right: 1.5em;
     list-style: none;
-
-
 }
 
 .contentContainer div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+
 .contentContainer div ul:hover{
     color: rgb(28, 112, 84);
     cursor: pointer;    
@@ -349,7 +350,10 @@ nav a{
 }
 
 
-
+.contentContainer span p{
+    text-align: center;
+    padding-bottom: 1em;
+}
 
 
 
