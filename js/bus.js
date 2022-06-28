@@ -50,5 +50,21 @@ items.forEach(item => {
 
 
 
+var cards = document.querySelectorAll('.card');
+
+[...cards].forEach((card) => {
+    card.addEventListener('click', function () {
+        card.classList.toggle('is-flipped');
+    });
+});
+
+
+/* partie jquery javascript pour card carte afficher apres click */
+$(".image").click(function () {
+    $(".image").removeClass("active");
+    $(this).addClass("active");
+})
+
+
 
 

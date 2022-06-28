@@ -75,6 +75,13 @@ h1 span {
     font-weight: 900;
 
 }
+
+
+
+
+
+
+
 .btn-first:nth-child(1){
     margin-right: 30px;
 }
@@ -433,6 +440,58 @@ footer ul p{
 
 
 
+/*PETITE - SMALL card */
+.scene {
+    display: inline-block;
+    width: 23vh;
+    height: 96px;
+    perspective: 600px;
+    margin: 1%;
+  
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+  
+  .is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+    backface-visibility: hidden;
+  }
+  
+  .card__face--front {
+    background: crimson;
+  }
+  
+  .card__face--back {
+    background: slateblue;
+    transform: rotateY(180deg);
+  }
+  
+  
+
+
+
+
+
+
 
 
 
@@ -461,3 +520,122 @@ footer ul p{
     }
 }
 /* FIN partie navbar menu navigation */
+
+
+
+
+
+
+.portfolio {
+    display: flex;
+    min-width: 80vw;
+    max-width: 90vw;
+
+    margin: 4rem auto;
+  }
+  
+
+
+  .image {
+    min-width: 1vw;
+    height:110%;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.05, 0.61, 0.41,0.95);
+    overflow: hidden;
+    position: relative;
+  }
+  .image.active {
+    flex-grow: 100;
+    max-width: 60em;
+    margin: 0px;
+    border-radius: 7px;
+    background-size: auto 100%;
+  }
+  .image:not(.active){
+    flex-grow: 1;
+    border-radius: 5px;
+  }
+  .text-container {
+    width: 100%;
+    min-height: 60vh;
+    height: 400px;
+    padding: 2rem;
+    visibility: hidden;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all .4s ease;
+    background: linear-gradient(354deg, black 0%, transparent 72%);
+    color: white;
+    overflow: hidden;
+  }
+  .text {
+    position: absolute;
+    bottom: 5rem;
+  }
+
+
+
+  .text h5{
+    color: #ecf588;
+    font-size: large;
+    position:fixed;
+    top: 10%;
+  }
+
+
+
+  .active .text-container {
+    visibility: visible;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+
+  .portfolio {
+  display: flex;
+  min-width: 600px;
+  max-width: 900px;
+  height: 400px;
+  margin: 4rem auto;
+}
+.image {
+  min-width: 60px;
+  margin: 10px;
+  cursor: pointer;
+  transition: .5s cubic-bezier(0.05, 0.61, 0.41,0.95);
+  overflow: hidden;
+  position: relative;
+}
+.image.active {
+  flex-grow: 100;
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 7px;
+  background-size: auto 100%;
+}
+.image:not(.active){
+  flex-grow: 1;
+  border-radius: 5px;
+}
+.text-container {
+  width: 100%;
+  height: 400px;
+  padding: 2rem;
+  visibility: hidden;
+  transform: translateY(300px);
+  opacity: 0;
+  transition: all .4s ease;
+  background: linear-gradient(354deg, black 0%, transparent 72%);
+  color: white;
+  overflow: hidden;
+}
+.text {
+  position: absolute;
+  bottom: 5rem;
+}
+.active .text-container {
+  visibility: visible;
+  transform: translateY(0px);
+  opacity: 1;
+}
