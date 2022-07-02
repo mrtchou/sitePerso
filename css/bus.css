@@ -391,44 +391,64 @@ nav a{
 
 
 
-
-
 footer{
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    height: auto;
-    width: 100%;   
-    background: #f1f1f1;
-    position: relative;
-    margin-top: 10%;
-    padding: 1.3em;
+  position: relative;
+  height: auto;
+  width: 100%;   
+  background: #f1f1f1;
+  position: relative;
+  margin-top: 10%;
+  padding: 1.3em;
+  bottom: 0;
+}
+
+
+.footerCopyright{
+  text-align: center;
+  color: rgba(0,0,0,.7); 
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}
+
+
+.footerCopyright span{
+  text-shadow: #333;
+  padding-left: 11px;
+  padding-right: 11px;
+  font-weight: 900;
 }
 
 
 
-footer ul a{
+
+.footerPart1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   
+}
+
+
+
+.footerPart1 ul a{
   text-decoration: none;
 }
 
-footer ul li{
+.footerPart1 ul li{
     list-style-type:none;
     padding-bottom: 1em;
     
 }
-footer ul li span{
+.footerPart1 ul li span{
     padding-left:  1em;
    
 }
-footer ul li i{
+.footerPart1 ul li i{
     width: 1em;
     margin-right: 1em;
     
 }
 
-footer ul p{
+.footerPart1 ul p{
     padding-bottom: 1.3em;
     
     font-weight: 700;
