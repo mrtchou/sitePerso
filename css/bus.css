@@ -495,6 +495,103 @@ footer ul p{
 
 
 
+
+
+  /* Activités */
+.activites{
+    height: 700px;
+    width: auto;
+    margin: 45px 3.8% 0 3.8%;
+    padding: 0;
+  }
+  .activites h2{
+    font-size: 1.3em;
+    margin: 70px 0 30px 0;
+  }
+  .blocactivites{
+    display: flex;
+    justify-content: space-between;
+  }
+  .premierblock, .deuxiemeblock{
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+  }
+  .grandecarte{
+    height: 442px;
+    width: 46%;
+  }
+  .doublecarte{
+    height: 444px;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .doublecartepartie1{
+    height: 237px;
+  }
+  .doublecartepartie2{
+    height: 165px;
+  }
+  .grandecarte, .doublecartepartie1, .doublecartepartie2, .doublecarte2partie1, .doublecarte2partie2{
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 25%);
+    transition: transform .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+  }
+  .grandecarte:hover, .doublecartepartie1:hover, .doublecartepartie2:hover, .doublecarte2partie1:hover, .doublecarte2partie2:hover{
+    transform: scale(1.019); 
+    cursor: pointer;
+  }
+  .grandecarte:active, .doublecartepartie1:active, .doublecartepartie2:active, .doublecarte2partie1:active, .doublecarte2partie2:active{
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  }
+  .activites article img{
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+  }
+  .grandecarte img{
+    height: 87%;
+  }
+  .doublecartepartie1 img{
+    height: 183px;
+    object-fit: cover;    
+  }
+  .doublecartepartie2 img{
+    height: 104px;
+    object-fit: cover;
+  }
+  .activites article h3{
+    font-size: 1em;
+    margin-left: 17px;
+  }
+  .doublecarte2partie1{
+    height: 194px;
+  }
+  .doublecarte2partie2{
+    height: 206px;
+  }
+  .doublecarte2partie1 img{
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .doublecarte2partie2 img{
+    height: 145px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .doublecarte2partie1 h3, .doublecarte2partie2 h3{
+    margin-top: 14px;
+  }
+  
+
+
+
+
 @media screen and (max-width: 900px) {
 
     .btn-responsive-menu {
