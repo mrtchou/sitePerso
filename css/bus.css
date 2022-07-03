@@ -26,7 +26,7 @@ main{
 }
 
 
-
+/* partie service proposé */
 .anchor{
     display: block;
     height: 60px; /*same height as header*/
@@ -81,7 +81,7 @@ h1 span {
 
 
 
-
+/* trois ligne decoratirce sur coté gauche, apparition douce au chargement */
 .btn-first:nth-child(1){
     margin-right: 30px;
 }
@@ -111,6 +111,7 @@ h1 span {
 }
 
 
+/* les boutons reseaux socials, apparition douce de gauche vers la droite */
 .socialNetworks {
     list-style-type: none;
     position: relative;
@@ -145,6 +146,7 @@ h1 span {
     height: 40px;
 
 }
+
 
 
 
@@ -200,16 +202,6 @@ nav a{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-/* Btn responsive */
-
 .btn-responsive-menu {
     position: fixed;
     top: 15px;
@@ -252,7 +244,7 @@ nav a{
 }
 
 .connexion{
-    align-self: flex-end;
+    text-align: left;
 }
 
 
@@ -267,7 +259,8 @@ nav a{
 
 
 
-/* partie main content*/
+
+/* partie main content la partie centrale des grande cartes qui inclu d'autre contenu */
 .content{
     position: relative;
     display: flex;
@@ -398,7 +391,7 @@ nav a{
 
 
 
-
+/* partie FOOTER le bas de la page */
 footer{
   position: relative;
   height: auto;
@@ -420,18 +413,19 @@ footer{
 
 
 .footerRemonter img{
-  text-align: right;
-  width: 23px;
-  height: 23px;
+  width: 31px;
+  height: auto;
+  position: sticky;
 }
+
 .footerRemonter{
   text-align: right;
+  scroll-behavior: smooth;
 }
-html { scroll-behavior: smooth; }
 
 
 
-.footerCopyright span{
+.footerCopyright .nomSite{
   text-shadow: #333;
   padding-left: 11px;
   padding-right: 11px;
@@ -474,6 +468,8 @@ html { scroll-behavior: smooth; }
     
     font-weight: 700;
 }
+
+
 
 
 
@@ -657,22 +653,20 @@ html { scroll-behavior: smooth; }
         top: 50px;
     }
 }
-/* FIN partie navbar menu navigation */
 
 
 
 
 
 
+
+/* partie concernant le projets realisé, mon portofolio avec des cartes qui se deroule au click, des slides*/
 .portfolio {
     display: flex;
     min-width: 80vw;
     max-width: 90vw;
-
     margin: 4rem auto;
   }
-  
-
 
   .image {
     min-width: 1vw;
@@ -712,16 +706,12 @@ html { scroll-behavior: smooth; }
     bottom: 5rem;
   }
 
-
-
   .text h5{
     color: #ecf588;
     font-size: large;
     position:fixed;
     top: 10%;
   }
-
-
 
   .active .text-container {
     visibility: visible;
@@ -730,50 +720,4 @@ html { scroll-behavior: smooth; }
   }
 
 
-  .portfolio {
-  display: flex;
-  min-width: 600px;
-  max-width: 900px;
-  height: 400px;
-  margin: 4rem auto;
-}
-.image {
-  min-width: 60px;
-  margin: 10px;
-  cursor: pointer;
-  transition: .5s cubic-bezier(0.05, 0.61, 0.41,0.95);
-  overflow: hidden;
-  position: relative;
-}
-.image.active {
-  flex-grow: 100;
-  max-width: 600px;
-  margin: 0px;
-  border-radius: 7px;
-  background-size: auto 100%;
-}
-.image:not(.active){
-  flex-grow: 1;
-  border-radius: 5px;
-}
-.text-container {
-  width: 100%;
-  height: 400px;
-  padding: 2rem;
-  visibility: hidden;
-  transform: translateY(300px);
-  opacity: 0;
-  transition: all .4s ease;
-  background: linear-gradient(354deg, black 0%, transparent 72%);
-  color: white;
-  overflow: hidden;
-}
-.text {
-  position: absolute;
-  bottom: 5rem;
-}
-.active .text-container {
-  visibility: visible;
-  transform: translateY(0px);
-  opacity: 1;
-}
+ 
