@@ -2,7 +2,7 @@
 
 
 
-Hey there! I'm SaidKhaj
+Hey there!
 👨🏻‍💻  About Me
 💡  I like to explore new technologies.
 
