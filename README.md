@@ -1,30 +1,70 @@
-# PORTOFOLIO
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-Hey there!
-👨🏻‍💻  About Me
-💡  I like to explore new technologies.
+In the project directory, you can run:
 
-🎓 I'm currently working in IT as a freelancer.
+### `npm start`
 
-✍️ In my free time, I do blog writing as hobbies/side activities.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-💬 Do not hesitate to contact me for advice and volunteering, or just for an interesting discussion.
-✉️ You can email me at dev.mrtchou@gmail.com! I will try to answer as soon as possible.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-📄 I am open to comments and suggestions!
+### `npm test`
 
-my CRYPTO wallet if you need:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
--BTC <br/>
-bc1qktkep0xzpp0km993scen0vcykyajy52xaqmw2q
+### `npm run build`
 
--ETH <br/>
-0x5A445761C7e8ab09EA96B463937bff5FfC21Ee36
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
--Dogecoin <br/>
-DDNrAB8eaLztuL7hpPmA1PyuZNCvGPnLHw
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
--Tezos <br/>
-tz1atZ1hAuap7epoKp9yrjmzC8CwyT2EJnuR
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
