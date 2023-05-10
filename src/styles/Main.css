@@ -1,19 +1,25 @@
 main {
     padding: 20px;
   }
-  
+
+
   .main-content {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
   }
   
   .main-content h2 {
-    font-size: 1.6rem;
-    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
   }
   
   .main-content p {
-    font-size: 1.2rem;
-    text-align: justify;
+    margin-bottom: 1rem;
   }
   

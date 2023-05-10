@@ -1,9 +1,29 @@
-import React from "react";
 import "../styles/Main.css";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
+// ...
 const Main = () => {
+  useEffect(() => {
+    ScrollReveal().reveal(".main-content", {
+      delay: 888,
+      distance: "50px",
+      origin: "bottom",
+    });
+  }, []);
+
   return (
     <main>
+      <div className="main-content">
+        <h2>Collaborons</h2>
+        <p>
+          Faites confiance à BEPAG pour transformer votre vision en réalité et
+          donner vie à vos projets les plus ambitieux. Ensemble, créons des
+          expériences en ligne exceptionnelles pour vos clients et propulsez
+          votre entreprise vers de nouveaux sommets.
+        </p>
+        //...other paragraphs
+      </div>
       <div className="main-content">
         <h2>Nos services</h2>
         <p>
@@ -14,6 +34,8 @@ const Main = () => {
           web progressives. Quel que soit votre projet, vous pouvez être sûr
           qu'il sera entre de bonnes mains avec BEPAG.
         </p>
+      </div>
+      <div className="main-content">
         <h2>Expertise technologique</h2>
         <p>
           Notre expertise en matière de technologies inclut HTML, CSS,
@@ -24,12 +46,20 @@ const Main = () => {
           que votre site web sera non seulement esthétiquement attrayant, mais
           aussi optimisé pour le référencement et la performance.
         </p>
+      </div>
+      <div className="main-content">
         <h2>Collaborons</h2>
         <p>
           Faites confiance à BEPAG pour transformer votre vision en réalité et
           donner vie à vos projets les plus ambitieux. Ensemble, créons des
           expériences en ligne exceptionnelles pour vos clients et propulsez
           votre entreprise vers de nouveaux sommets.
+        </p>
+        <p>
+          Faites confiance à BEPAG pour transformer votre vision en réalité et
+          donner vie à vos projets les plus ambitieux. Ensemble, créons des
+          expériences en ligne exceptionnelles pour vos clients et propulsez
+          votre entreprise vers de nouveaux sommets. Lorem500
         </p>
       </div>
     </main>

@@ -22,19 +22,27 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  transition: background-color 0.3s ease; /* Ajouté */
+  transition: background-color 0.2s ease;
+  height: 11vh;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar:hover {
-  background-color: rgba(0, 0, 0, 1); /* Ajouté */
+  background-color: rgba(73, 5, 5, 0.8);
 }
+
+.navbar-scrolled {
+  height: 7vh; /* or whatever height you want */
+  transition: 0.3s ease;
+}
+
 
 .logo {
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
-  text-transform: uppercase; /* Ajouté */
-  letter-spacing: 2px; /* Ajouté */
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
 }
 
 .menu {
@@ -45,22 +53,24 @@ header {
 
 .menu li {
   margin-left: 1rem;
-  transition: transform 0.3s ease; /* Ajouté */
+  transition: transform 0.3s ease; 
 }
 
 .menu li:hover {
-  transform: scale(1.1); /* Ajouté */
+  transform: scale(1.2);
 }
 
 .menu a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  transition: color 0.3s ease; /* Ajouté */
+  transition: color 0.3s ease; 
 }
 
 .menu a:hover {
   color: #ffd700;
+  font:bold;
+
 }
 
 
