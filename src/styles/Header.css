@@ -88,6 +88,19 @@ header {
   margin: 0;
 }
 
+.hoverable-letter {
+  transition: transform 0.3s ease;
+}
+
+.hoverable-letter:hover {
+  transform: scale(1.5); /* ajustez le facteur d'échelle au besoin */
+  color: red;
+}
+
+.escape-div{
+  transition: "transform 0.5s ease-out"
+}
+
 .header-small{
   height: 49vh;
 }
