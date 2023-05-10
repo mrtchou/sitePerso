@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, useLocation, Routes } from "react-router-dom";
 
 import "../styles/Header.css";
 
-const Header = () => {
+const Header = ({ small }) => {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,15 +23,17 @@ const Header = () => {
     };
   }, []);
 
+  const headerClass = location.pathname === "/contact" ? "header-small" : "";
+
   return (
-    <header>
+    <header className={headerClass}>
       <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
         <div className="logo">
           <h1>BEPAG</h1>
         </div>
         <ul className="menu">
           <li>
-            <Link to="/services">Services</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/portfolio">Portofolio</Link>
