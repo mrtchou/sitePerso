@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link, Route, Routes } from "react-router-dom";
+
 import "../styles/Header.css";
 
 const Header = () => {
@@ -28,25 +30,26 @@ const Header = () => {
         </div>
         <ul className="menu">
           <li>
-            <a href="#services">Services</a>
+            <Link to="/services">Services</Link>
           </li>
           <li>
-            <a href="#portfolio">Portofolio</a>
+            <Link to="/portfolio">Portofolio</Link>
           </li>
           <li>
-            <a href="#projects">Nos Projets</a>
+            <Link to="/projects">Nos Projets</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="#login">Connexion</a>
+            <Link to="/login">Connexion</Link>
           </li>
           <li>
-            <a href="#register">Inscription</a>
+            <Link to="/register">Inscription</Link>
           </li>
         </ul>
       </nav>
+
       <div className="header-content">
         <h2>Best in Web Development and Progressive Solutions</h2>
       </div>
