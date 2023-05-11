@@ -4,8 +4,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 
 import Contact from "./components/Contact";
-import { BrowserRouter, useLocation, Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -15,8 +14,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* <Route path="/signup" element={<Signup />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/articles" element={<Articles />} /> */}
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );
