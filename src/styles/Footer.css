@@ -1,17 +1,16 @@
-.footer {
+footer {
     background-color: #1F2833;
     color: #C5C6C7;
     padding: 20px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     justify-content: space-around;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    align-items: start;
   }
   
   .footer-content {
-    margin: 20px 0;
+    margin: 0;
   }
   
   .footer-content h3, .footer-content h4 {
@@ -38,3 +37,12 @@
     text-decoration: none;
   }
   
+  .footer-content ul li a {
+    color: #C5C6C7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-content ul li a:hover {
+    color: #66FC
+  }  
