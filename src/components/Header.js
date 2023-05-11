@@ -12,9 +12,11 @@ const Header = ({ small }) => {
 
   // On définit le titre à afficher dans le Header.
   const title = "Best in Web Development and Progressive Solutions";
+  const titleBepag = "BEPAG";
 
   // On sépare le titre en un tableau de lettres pour permettre l'animation de chaque lettre individuellement.
   const letters = title.split("");
+  const lettersBepag = titleBepag.split("");
 
   // On renvoie le JSX pour le Header.
   return (
@@ -22,7 +24,13 @@ const Header = ({ small }) => {
     <header className={location.pathname === "/contact" ? "header-small" : ""}>
       <nav className={`navbar`}>
         <div className="logo">
-          <h1>BEPAG</h1>
+          <h1>
+            {lettersBepag.map((lettr, index) => (
+              <span key={index} className="hoverable-letter">
+                {lettr}
+              </span>
+            ))}
+          </h1>
         </div>
         <ul className="menu">
           {/* On utilise le composant Link pour la navigation dans l'application. */}
@@ -48,14 +56,40 @@ const Header = ({ small }) => {
       </nav>
 
       <div className="header-content">
-        <h2>
-          {/* On parcourt le tableau de lettres et on affiche chaque lettre dans une balise span pour pouvoir animer chaque lettre individuellement. */}
+        {/* <h2>
+          {/* On parcourt le tableau de lettres et on affiche chaque lettre dans une balise span pour pouvoir animer chaque lettre individuellement. }
           {letters.map((letter, index) => (
             <span key={index} className="hoverable-letter">
               {letter}
             </span>
           ))}
-        </h2>
+        </h2> */}
+        <p>
+          <strong>BEPAG</strong> - votre partenaire de confiance pour des
+          solutions web sur mesure. En tant que{" "}
+          <strong>développeur web expérimenté</strong>, je crée des{" "}
+          <strong>sites web et des applications modernes et performants</strong>{" "}
+          qui aident les entreprises à se développer. Experte en technologies
+          clés telles que{" "}
+          <strong>
+            HTML, CSS, JavaScript, React, Node.js, PHP, Symfony et WordPress
+          </strong>
+          , BEPAG est dédiée à transformer vos idées en réalité. <br />
+          <br />
+          Chaque projet est unique et mérite une attention particulière - c'est
+          pourquoi je propose une <strong>
+            gamme complète de services
+          </strong>{" "}
+          pour répondre à vos besoins spécifiques. Visitez{" "}
+          <a
+            href="http://www.bepag.fr"
+            style="color: #ffd700; text-decoration: none;"
+          >
+            www.bepag.fr
+          </a>{" "}
+          et découvrez comment je peux propulser votre entreprise vers de
+          nouveaux sommets.
+        </p>
       </div>
     </header>
   );

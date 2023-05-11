@@ -87,6 +87,18 @@ header {
   color: white;
   margin: 0;
 }
+.header-content p {
+  color: white; /* Couleur du texte */
+  font-size: 1.2em; /* Taille du texte */
+  line-height: 1.6em; /* Espacement des lignes */
+  text-align: justify; /* Alignement du texte */
+  padding: 15px; /* Espacement interne */
+  margin: 15px 0; /* Espacement externe */
+  background-color: rgba(3, 38, 95, 0.6); /* Arrière-plan semi-transparent */
+  border-radius: 5px; /* Coins arrondis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre de texte */
+}
+
 
 .hoverable-letter {
   transition: transform 0.3s ease;
