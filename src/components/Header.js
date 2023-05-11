@@ -1,6 +1,7 @@
 // On importe les bibliothèques nécessaires : React, le module Link de react-router-dom pour la navigation, et le module useLocation pour accéder à l'emplacement actuel dans l'application.
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // On importe le CSS pour le style du Header.
 import "../styles/Header.css";
@@ -22,6 +23,16 @@ const Header = ({ small }) => {
   return (
     // On applique une classe différente au Header en fonction de la route actuelle, pour changer le style du Header sur la page Contact.
     <header className={location.pathname === "/contact" ? "header-small" : ""}>
+      <Helmet>
+        <meta
+          name="description"
+          content="BEPAG est une agence spécialisée en développement web. Nous créons des sites web et applications SaaS performants pour tous secteurs, optimisant vos opérations et favorisant votre croissance. Nous maîtrisons React, Node.js, PHP, Symfony et WordPress et réalisons une grande diversité de projets, du site vitrine à l'application web complexe. Chez BEPAG, nous transformons vos idées en réalité avec des solutions adaptées à vos besoins spécifiques."
+        />
+        <meta
+          name="keywords"
+          content="développement web, sites web, applications SaaS, React, Node.js, PHP, Symfony, WordPress"
+        />
+      </Helmet>
       <nav className={`navbar`}>
         <div className="logo">
           <h1>
@@ -65,30 +76,19 @@ const Header = ({ small }) => {
           ))}
         </h2> */}
         <p>
-          <strong>BEPAG</strong> - votre partenaire de confiance pour des
-          solutions web sur mesure. En tant que{" "}
-          <strong>développeur web expérimenté</strong>, je crée des{" "}
-          <strong>sites web et des applications modernes et performants</strong>{" "}
-          qui aident les entreprises à se développer. Experte en technologies
-          clés telles que{" "}
-          <strong>
-            HTML, CSS, JavaScript, React, Node.js, PHP, Symfony et WordPress
-          </strong>
-          , BEPAG est dédiée à transformer vos idées en réalité. <br />
+          <strong>BEPAG</strong>, votre partenaire pour des solutions web sur
+          mesure. Nous créons des{" "}
+          <strong>sites web et applications SaaS performants</strong> pour tous
+          secteurs, optimisant vos opérations et favorisant votre croissance.
           <br />
-          Chaque projet est unique et mérite une attention particulière - c'est
-          pourquoi je propose une <strong>
-            gamme complète de services
-          </strong>{" "}
-          pour répondre à vos besoins spécifiques. Visitez{" "}
-          <a
-            href="http://www.bepag.fr"
-            style="color: #ffd700; text-decoration: none;"
-          >
-            www.bepag.fr
-          </a>{" "}
-          et découvrez comment je peux propulser votre entreprise vers de
-          nouveaux sommets.
+          <br />
+          Maîtrisant <strong>React, Node.js, PHP, Symfony et WordPress</strong>,
+          notre équipe réalise une grande diversité de projets, du site vitrine
+          à l'application web complexe.
+          <br />
+          <br />
+          Chez BEPAG, nous transformons vos idées en réalité avec des solutions
+          adaptées à vos besoins spécifiques.
         </p>
       </div>
     </header>

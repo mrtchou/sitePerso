@@ -22,18 +22,6 @@ const Main = () => {
           expériences en ligne exceptionnelles pour vos clients et propulsez
           votre entreprise vers de nouveaux sommets.
         </p>
-        <p>
-          "Bienvenue chez BEPAG - votre partenaire de confiance pour des
-          solutions web sur mesure. En tant que développeur web expérimenté, je
-          crée des sites web et des applications modernes et performants qui
-          aident les entreprises à se développer. Experte en technologies clés
-          telles que HTML, CSS, JavaScript, React, Node.js, PHP, Symfony et
-          WordPress, BEPAG est dédiée à transformer vos idées en réalité. Chaque
-          projet est unique et mérite une attention particulière - c'est
-          pourquoi je propose une gamme complète de services pour répondre à vos
-          besoins spécifiques. Visitez www.bepag.fr et découvrez comment je peux
-          propulser votre entreprise vers de nouveaux sommets."
-        </p>
       </div>
       <div className="main-content">
         <h2>Nos services</h2>
