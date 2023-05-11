@@ -5,6 +5,7 @@ import Main from "./components/Main";
 
 import Contact from "./components/Contact";
 import { BrowserRouter, useLocation, Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

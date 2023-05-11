@@ -76,13 +76,21 @@ header {
 }
 
 
+
+
+
 .header-content {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
+  opacity: 0; /* Rend le contenu transparent */
+  transition: opacity 2s ease-in-out; /* Spécifie la transition à appliquer à la propriété opacity */
 }
 
+.header-content.visible {
+  opacity: 1; /* Rend le contenu opaque */
+}
 .header-content h2 {
   color: white;
   margin: 0;
@@ -91,12 +99,13 @@ header {
   color: white; /* Couleur du texte */
   font-size: 1.2em; /* Taille du texte */
   line-height: 1.6em; /* Espacement des lignes */
-  text-align: justify; /* Alignement du texte */
+  text-align:center; /* Alignement du texte */
   padding: 15px; /* Espacement interne */
   margin: 15px 0; /* Espacement externe */
   background-color: rgba(3, 38, 95, 0.6); /* Arrière-plan semi-transparent */
   border-radius: 5px; /* Coins arrondis */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre de texte */
+  width: 40vw;
 }
 
 
@@ -114,5 +123,5 @@ header {
 }
 
 .header-small{
-  height: 49vh;
+  height: 53vh;
 }

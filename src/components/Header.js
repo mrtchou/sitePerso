@@ -1,5 +1,5 @@
 // On importe les bibliothèques nécessaires : React, le module Link de react-router-dom pour la navigation, et le module useLocation pour accéder à l'emplacement actuel dans l'application.
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -10,6 +10,7 @@ import "../styles/Header.css";
 const Header = ({ small }) => {
   // On utilise le hook useLocation pour obtenir un objet représentant l'emplacement actuel (URL).
   const location = useLocation();
+  const [isVisible, setIsVisible] = useState(false);
 
   // On définit le titre à afficher dans le Header.
   const title = "Best in Web Development and Progressive Solutions";
@@ -18,6 +19,12 @@ const Header = ({ small }) => {
   // On sépare le titre en un tableau de lettres pour permettre l'animation de chaque lettre individuellement.
   const letters = title.split("");
   const lettersBepag = titleBepag.split("");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 130); // Attend 1 seconde avant de rendre le paragraphe visible
+  }, []);
 
   // On renvoie le JSX pour le Header.
   return (
@@ -66,7 +73,7 @@ const Header = ({ small }) => {
         </ul>
       </nav>
 
-      <div className="header-content">
+      <div className={`header-content ${isVisible ? "visible" : ""}`}>
         {/* <h2>
           {/* On parcourt le tableau de lettres et on affiche chaque lettre dans une balise span pour pouvoir animer chaque lettre individuellement. }
           {letters.map((letter, index) => (
@@ -77,18 +84,11 @@ const Header = ({ small }) => {
         </h2> */}
         <p>
           <strong>BEPAG</strong>, votre partenaire pour des solutions web sur
-          mesure. Nous créons des{" "}
-          <strong>sites web et applications SaaS performants</strong> pour tous
-          secteurs, optimisant vos opérations et favorisant votre croissance.
+          mesure.
           <br />
           <br />
-          Maîtrisant <strong>React, Node.js, PHP, Symfony et WordPress</strong>,
-          notre équipe réalise une grande diversité de projets, du site vitrine
-          à l'application web complexe.
-          <br />
-          <br />
-          Chez BEPAG, nous transformons vos idées en réalité avec des solutions
-          adaptées à vos besoins spécifiques.
+          Nous transformons vos idées en réalité avec des solutions adaptées à
+          vos besoins spécifiques.
         </p>
       </div>
     </header>

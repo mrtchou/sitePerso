@@ -47,18 +47,28 @@ const Main = () => {
         </p>
       </div>
       <div className="main-content">
-        <h2>Collaborons</h2>
+        <h2>Nos solutions</h2>
         <p>
-          Faites confiance à BEPAG pour transformer votre vision en réalité et
-          donner vie à vos projets les plus ambitieux. Ensemble, créons des
-          expériences en ligne exceptionnelles pour vos clients et propulsez
-          votre entreprise vers de nouveaux sommets.
-        </p>
-        <p>
-          Faites confiance à BEPAG pour transformer votre vision en réalité et
-          donner vie à vos projets les plus ambitieux. Ensemble, créons des
-          expériences en ligne exceptionnelles pour vos clients et propulsez
-          votre entreprise vers de nouveaux sommets. Lorem500
+          <strong>BEPAG</strong> - votre partenaire de confiance pour des
+          solutions web sur mesure. En tant que{" "}
+          <strong>développeur web expérimenté</strong>, je crée non seulement
+          des
+          <strong> sites web</strong>, mais aussi des{" "}
+          <strong>applications SaaS modernes et performantes</strong> adaptées à
+          divers secteurs d'activité. Ces solutions digitales aident les
+          entreprises à se développer et à optimiser leurs opérations.
+          <br />
+          <br />
+          Experte en technologies clés telles que{" "}
+          <strong>React, Node.js, PHP, Symfony et WordPress</strong>, BEPAG est
+          capable de réaliser une grande variété de projets, du site vitrine au
+          site e-commerce, en passant par les applications web complexes.
+          <br />
+          <br />
+          Chez BEPAG, nous croyons que chaque projet mérite une solution unique
+          et sur mesure. Nous sommes dédiés à transformer vos idées en réalité,
+          en créant des sites web et des applications qui correspondent
+          parfaitement à vos besoins et objectifs.
         </p>
       </div>
     </main>
