@@ -15,7 +15,9 @@ const Footer = () => {
       <div className="footer-content">
         <h4>Contact</h4>
         <ul>
-          <li>Email: contact@bepag.fr</li>
+          <li>
+            Email: <a href="mailto:contact@bepag.fr">contact@bepag.fr</a>
+          </li>
           <li>Téléphone: +33 (0)1 23 45 67 89</li>
           <li>Adresse: 123 rue des Exemples, 75000 Paris, France</li>
         </ul>
@@ -23,19 +25,35 @@ const Footer = () => {
       <div className="footer-content">
         <h4>Liens</h4>
         <ul>
-          <li>Accueil</li>
-          <li>Portfolio</li>
-          <li>Nos Projets</li>
-          <li>Contact</li>
+          <li>
+            <a href="/">Accueil</a>
+          </li>
+          <li>
+            <a href="/portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="/projets">Nos Projets</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
         </ul>
       </div>
       <div className="footer-content">
         <h4>Réseaux sociaux</h4>
         <ul className="socials">
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
+          <li>
+            <a href="https://www.facebook.com">Facebook</a>
+          </li>
+          <li>
+            <a href="https://twitter.com">Twitter</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com">Instagram</a>
+          </li>
         </ul>
       </div>
     </footer>
