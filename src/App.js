@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Main from "./components/Main";
 
 import Contact from "./components/Contact";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/articles" element={<Articles />} /> */}
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
