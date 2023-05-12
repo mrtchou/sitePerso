@@ -65,17 +65,17 @@ const Header = ({ small }) => {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/projects">Nos Projets</Link>
-          </li>
-          <li>
             <Link to="/contact">Contact</Link>
+          </li>
+          {/* <li>
+            <Link to="/projects">Nos Projets</Link>
           </li>
           <li>
             <Link to="/login">Connexion</Link>
           </li>
           <li>
             <Link to="/register">Inscription</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
 

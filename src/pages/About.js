@@ -8,9 +8,9 @@ const About = () => {
       <p>
         BEPAG, qui signifie "Business Evolution" et "Progressive Advancement
         Group", est une agence de développement web spécialisée dans la création
-        de solutions informatiques innovantes. Fondée en décembre 2022, notre
-        mission est d'aider les entreprises à améliorer leur performance et à
-        croître dans leurs activités.
+        de solutions informatiques innovantes. Notre mission est d'aider les
+        entreprises à améliorer leur performance et à croître dans leurs
+        activités.
       </p>
 
       <h2>Notre Expertise</h2>
@@ -25,10 +25,17 @@ const About = () => {
       <h2>Nos Services</h2>
       <p>
         Chez BEPAG, nous offrons une gamme complète de services de développement
-        web, allant des sites web d'entreprise aux boutiques en ligne, en
-        passant par les applications web progressives. Grâce à notre expertise
-        en diverses technologies, nous sommes capables de fournir des solutions
-        sur mesure et évolutives qui répondent à vos besoins spécifiques.
+        web, allant des sites vitrines, destinés à présenter votre entreprise et
+        vos services, de sites e-commerce pour vendre vos produits en ligne,
+        jusqu'aux applications SaaS, pour offrir des services directement via
+        internet.
+        <br />
+        Grâce à notre maîtrise de diverses technologies de pointe, nous sommes
+        en mesure de concevoir des solutions sur mesure, évolutives et
+        parfaitement adaptées à vos exigences spécifiques. Grâce à notre
+        expertise en diverses technologies, nous sommes capables de fournir des
+        solutions sur mesure et évolutives qui répondent à vos besoins
+        spécifiques.
       </p>
 
       <h2>Nos Résultats</h2>
@@ -42,10 +49,8 @@ const About = () => {
 
       <h2>Contactez-nous</h2>
       <p>
-        Visitez www.bepag.fr pour voir notre travail et comprendre comment nous
-        pouvons vous aider à réaliser vos projets web. Ensemble, créons des
-        expériences en ligne exceptionnelles pour vos clients et propulsons
-        votre entreprise vers de nouveaux sommets.
+        Ensemble, créons des expériences en ligne exceptionnelles pour vos
+        clients et propulsons votre entreprise vers de nouveaux sommets.
       </p>
     </div>
   );
