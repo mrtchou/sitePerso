@@ -29,7 +29,13 @@ const Header = ({ small }) => {
   // On renvoie le JSX pour le Header.
   return (
     // On applique une classe différente au Header en fonction de la route actuelle, pour changer le style du Header sur la page Contact.
-    <header className={location.pathname === "/contact" ? "header-small" : ""}>
+    <header
+      className={
+        location.pathname === "/contact" || location.pathname === "/about"
+          ? "header-small"
+          : ""
+      }
+    >
       <Helmet>
         <meta
           name="description"
@@ -56,7 +62,7 @@ const Header = ({ small }) => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/portfolio">Portofolio</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <Link to="/projects">Nos Projets</Link>
