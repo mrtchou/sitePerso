@@ -31,7 +31,9 @@ const Header = ({ small }) => {
     // On applique une classe différente au Header en fonction de la route actuelle, pour changer le style du Header sur la page Contact.
     <header
       className={
-        location.pathname === "/contact" || location.pathname === "/about"
+        location.pathname === "/contact" ||
+        location.pathname === "/about" ||
+        location.pathname === "/Nos-Services"
           ? "header-small"
           : ""
       }

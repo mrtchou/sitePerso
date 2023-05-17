@@ -11,7 +11,7 @@ const ServiceCard = ({ title, description }) => (
 const Services = () => {
   const services = [
     {
-      title: "Création de sites web",
+      title: "1. Création de sites web",
       description:
         "Que vous ayez besoin d'un site web corporatif, d'une boutique en ligne ou d'un portfolio personnel, nous avons les compétences et l'expertise nécessaires pour créer un site web qui correspond parfaitement à vos besoins. Nous utilisons une combinaison de HTML, CSS, JavaScript, React, et Node.js pour créer des sites web attrayants et fonctionnels.",
     },
