@@ -54,7 +54,9 @@ const Header = ({ small }) => {
           <h1>
             {lettersBepag.map((lettr, index) => (
               <span key={index} className="hoverable-letter">
-                {lettr}
+                <a href="https://bepag.fr/" className="noStyle">
+                  {lettr}
+                </a>
               </span>
             ))}
           </h1>
