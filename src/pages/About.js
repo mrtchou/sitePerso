@@ -7,10 +7,11 @@ const About = () => {
       <h1>À propos de BEPAG</h1>
       <p>
         BEPAG, qui signifie "Business Evolution" et "Progressive Advancement
-        Group", est une agence de développement web spécialisée dans la création
-        de solutions informatiques innovantes. Notre mission est d'aider les
-        entreprises à améliorer leur performance et à croître dans leurs
-        activités.
+        Group", est une agence de développement web et de conseil en technologie
+        spécialisée dans la création de solutions informatiques innovantes et le
+        suivi de projets technologiques. Notre mission est d'aider les
+        entreprises à améliorer leur performance, à croître dans leurs
+        activités, et à naviguer avec succès dans le paysage numérique complexe.
       </p>
 
       <h2>Notre Expertise</h2>
@@ -19,7 +20,10 @@ const About = () => {
         solide dans plusieurs technologies telles que HTML, CSS, WordPress, PHP,
         Symfony, React, JavaScript et Node.js. Mon objectif principal est de
         construire des sites web et des applications web de premier plan qui
-        répondent aux besoins spécifiques de chaque client.
+        répondent aux besoins spécifiques de chaque client. De plus, mon
+        expérience en consultation et en gestion de projets me permet d'offrir
+        des conseils précieux pour le développement et la mise en œuvre de vos
+        projets web.
       </p>
 
       <h2>Nos Services</h2>
@@ -28,14 +32,16 @@ const About = () => {
         web, allant des sites vitrines, destinés à présenter votre entreprise et
         vos services, de sites e-commerce pour vendre vos produits en ligne,
         jusqu'aux applications SaaS, pour offrir des services directement via
-        internet.
+        internet. En plus de ces services, nous proposons également du conseil
+        en développement web et un accompagnement dans la réalisation de vos
+        projets technologiques.
         <br />
         Grâce à notre maîtrise de diverses technologies de pointe, nous sommes
         en mesure de concevoir des solutions sur mesure, évolutives et
-        parfaitement adaptées à vos exigences spécifiques. Grâce à notre
-        expertise en diverses technologies, nous sommes capables de fournir des
-        solutions sur mesure et évolutives qui répondent à vos besoins
-        spécifiques.
+        parfaitement adaptées à vos exigences spécifiques. Notre expertise ne se
+        limite pas à la construction de solutions, nous nous engageons également
+        à vous aider à comprendre et à naviguer dans le paysage technologique en
+        constante évolution.
       </p>
 
       <h2>Nos Résultats</h2>

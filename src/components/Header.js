@@ -59,13 +59,16 @@ const Header = ({ small }) => {
         <ul className="menu">
           {/* On utilise le composant Link pour la navigation dans l'application. */}
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Accueil</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">À propos</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/Nos-Services">Nos Services</Link>
           </li>
           {/* <li>
             <Link to="/projects">Nos Projets</Link>
