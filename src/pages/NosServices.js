@@ -21,6 +21,13 @@ const Services = () => {
   return (
     <div className="services">
       <h1>Nos Services</h1>
+      <p>
+        Nous nous efforçons de fournir une gamme complète de services de
+        développement web pour répondre à vos besoins uniques. Nous nous
+        spécialisons dans la création de solutions personnalisées qui propulsent
+        les entreprises vers l'avenir. Voici un aperçu de ce que nous pouvons
+        vous offrir:
+      </p>
       <div className="services__content">
         {services.map((service, index) => (
           <ServiceCard
