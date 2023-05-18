@@ -31,9 +31,12 @@ const Contact = () => {
         Vous pouvez <a href="mailto:contact@bepag.fr">m'écrire</a> sur cette
         adresse email: <strong>{emailToCopy}</strong>
         {/* Ce lien agira comme un bouton mais ressemblera à un lien normal */}
-        <button onClick={copyToClipboard}> Copier</button>
+        <button onClick={copyToClipboard} className="btnCopied">
+          {" "}
+          Copier
+        </button>
       </p>
-      {copySuccess && { copySuccess }}
+      {copySuccess && <div>{copySuccess}</div>}
       <br />
       <br />
       <form onSubmit={handleSubmit}>
