@@ -11,11 +11,11 @@ const Header = ({ small }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   // Les titres sont définis ici
-  const title = "Best in Web Development and Progressive Solutions";
+  // const title = "Best in Web Development and Progressive Solutions";
   const titleBepag = "BEPAG";
 
   // Les titres sont divisés en un tableau de lettres pour permettre l'animation de chaque lettre individuellement.
-  const letters = title.split("");
+  // const letters = title.split("");
   const lettersBepag = titleBepag.split("");
 
   useEffect(() => {

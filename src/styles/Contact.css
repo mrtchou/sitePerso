@@ -44,3 +44,10 @@
   .contact form input[type="submit"]:hover {
     background-color: #45a049;
   }
+
+  a{
+    margin-left: 10px;
+    color: "blue";
+    text-decoration: none;
+    cursor: "pointer";
+  }

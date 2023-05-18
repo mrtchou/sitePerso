@@ -15,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Header small={window.location.pathname === "/contact"} />
         <Routes>
+          <Route path="*" element={<Main />} />
           <Route path="/" element={<Main />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
