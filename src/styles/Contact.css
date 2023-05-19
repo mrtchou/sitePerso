@@ -45,25 +45,25 @@
     background-color: #45a049;
   }
   .btnCopied {
-    background-color: transparent; /* Le fond est transparent */
-    border: 3px solid black; /* Pas de bordure */
-   
+    background-color:rgb(253, 213, 161);
+    border-radius: 19px;
+    border: transparent;
     color: #007bff; /* La couleur du texte est bleue */
-    text-decoration: underline; /* Le texte est souligné */
+    text-decoration: none; /* Le texte est souligné */
     cursor: pointer; /* Le curseur change lorsque vous survolez le bouton */
     padding: 7px; /* Pas de rembourrage */
     margin-left: 11px;
     font-family: inherit; /* Utilise la même police que le reste de la page */
     font-size: inherit; /* Utilise la même taille de police que le reste de la page */
-    transition: color 0.3s; /* Animation fluide lorsque la couleur change */
+    transition: color 0.9s; /* Animation fluide lorsque la couleur change */
   }
   
   .btnCopied:hover {
-    transition: color 0.7s; /* Animation fluide lorsque la couleur change */
     color: #014389; /* La couleur du texte change lorsque vous survolez le bouton */
-    border: none; /* Pas de bordure */
-    font-size:medium;
-    border-radius: 19px;
     background-color:antiquewhite;
+    padding: 7px; /* Pas de rembourrage */
+    margin-left: 11px;
+    font-family: inherit; /* Utilise la même police que le reste de la page */
+    font-size: inherit; /* Utilise la même taille de police que le reste de la page */
   }
   
