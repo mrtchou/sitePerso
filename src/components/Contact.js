@@ -5,7 +5,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [copySuccess, setCopySuccess] = useState("");
+  const [copySuccess, setCopySuccess] = useState(false);
 
   const emailToCopy = "contact@bepag.fr";
 
@@ -19,8 +19,8 @@ const Contact = () => {
   const copyToClipboard = (e) => {
     e.preventDefault();
     navigator.clipboard.writeText(emailToCopy);
-    setCopySuccess("Copié !");
-    setTimeout(() => setCopySuccess(""), 2000);
+    setCopySuccess(true);
+    setTimeout(() => setCopySuccess(false), 2000);
   };
 
   return (
@@ -33,10 +33,10 @@ const Contact = () => {
         {/* Ce lien agira comme un bouton mais ressemblera à un lien normal */}
         <button onClick={copyToClipboard} className="btnCopied">
           {" "}
-          Copier
+          {copySuccess ? <div>Copié !</div> : "Copier"}
         </button>
       </p>
-      {copySuccess && <div>{copySuccess}</div>}
+
       <br />
       <br />
       <form onSubmit={handleSubmit}>
