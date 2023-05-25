@@ -1,6 +1,5 @@
 const { DataTypes } = require("sequelize");
-const sequelize = require("../sequelize"); // Chemin vers votre fichier sequelize.js
-
+const sequelize = require("../sequelize");
 const Article = sequelize.define("Article", {
   id: {
     type: DataTypes.INTEGER,
@@ -15,7 +14,6 @@ const Article = sequelize.define("Article", {
     type: DataTypes.TEXT,
     allowNull: false,
   },
-  // Ajoutez d'autres champs selon vos besoins
 });
 
 module.exports = Article;
