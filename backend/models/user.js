@@ -1,22 +1,26 @@
-module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define("User", {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    name: DataTypes.STRING,
-    email: DataTypes.STRING,
-    password: DataTypes.STRING,
-    level: DataTypes.INTEGER,
-  });
+const { DataTypes } = require("sequelize");
+const sequelize = require("../sequelize"); // Chemin vers votre fichier sequelize.js
 
-  User.associate = (models) => {
-    User.hasMany(models.Article, {
-      foreignKey: "userId",
-      as: "articles",
-    });
-  };
+const User = sequelize.define("User", {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
+  },
+  name: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  email: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true,
+  },
+  password: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  // Ajoutez d'autres champs selon vos besoins
+});
 
-  return User;
-};
+module.exports = User;
