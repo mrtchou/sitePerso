@@ -6,6 +6,7 @@ const cors = require("cors");
 const passport = require("passport");
 const session = require("express-session");
 const PORT = process.env.PORT || 5000;
+const authRoutes = require("./routes/auth");
 
 app.use(express.json());
 
@@ -13,7 +14,7 @@ app.use(express.json());
 app.use(
   session({ secret: "secret key", resave: false, saveUninitialized: false })
 );
-
+app.use("/auth", authRoutes);
 app.use(passport.initialize());
 app.use(passport.session());
 
