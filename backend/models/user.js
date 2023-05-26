@@ -1,5 +1,6 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../sequelize");
+const bcrypt = require("bcryptjs");
 
 const User = sequelize.define("User", {
   id: {
@@ -19,6 +20,10 @@ const User = sequelize.define("User", {
   password: {
     type: DataTypes.STRING,
     allowNull: false,
+    set(value) {
+      const hash = bcrypt.hashSync(value, 10); // Hash le mot de passe avec un salt de 10 rounds
+      this.setDataValue("password", hash);
+    },
   },
 });
 
