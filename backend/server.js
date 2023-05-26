@@ -3,9 +3,18 @@ const bodyParser = require("body-parser");
 const app = express();
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+const passport = require("passport");
+const express = require("express");
+const session = require("express-session");
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
+
+app.use(
+  session({ secret: "secret key", resave: false, saveUninitialized: false })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Configuration explicite de CORS
 app.use(
