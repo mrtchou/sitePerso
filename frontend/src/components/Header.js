@@ -76,6 +76,9 @@ const Header = ({ small }) => {
           <li>
             <Link to="/Nos-Services">Nos Services</Link>
           </li>
+          <li>
+            <Link to="/child-tasks">Tâches Enfant</Link>
+          </li>
         </ul>
       </nav>
 
