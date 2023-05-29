@@ -1,8 +1,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
   }
   
@@ -19,18 +19,28 @@
     margin-bottom: 10px;
   }
   
-  .exercise-list,
-  .problem-list,
-  .word-list {
+  .exercise-list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  .exercise-list li,
-  .problem-list li,
-  .word-list li {
-    margin-bottom: 5px;
+  .exercise-list li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .exercise-list li:nth-child(odd) {
+    background-color: #f5f5f5;
+  }
+  
+  .line-number {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+    color: #999;
   }
   
   .login-form {

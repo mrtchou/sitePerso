@@ -194,6 +194,7 @@ const ChildTasks = () => {
       "Dormir",
     ],
   ];
+
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * 3);
 
@@ -216,50 +217,32 @@ const ChildTasks = () => {
   };
 
   const formatExercises = (exercises) => {
-    const formattedExercises = [];
-    let group = [];
-
-    exercises.forEach((exercise, index) => {
-      group.push(exercise);
-
-      if ((index + 1) % 10 === 0) {
-        formattedExercises.push(group);
-        group = [];
-      }
-    });
-
-    if (group.length > 0) {
-      formattedExercises.push(group);
-    }
-
-    return formattedExercises;
+    return exercises.map((exercise, index) => (
+      <li key={index}>
+        <span className="line-number">{index + 1}</span>
+        <span className="exercise-content">({exercise})</span>
+      </li>
+    ));
   };
+
   return authenticated ? (
     <div className="container">
       <div className="section">
         <h2>Exercices de mathématiques</h2>
-        {formatExercises(mathExercises).map((group, groupIndex) => (
-          <ul key={groupIndex} className="exercise-list">
-            {group.map((exercise, index) => (
-              <li key={index}>{exercise}</li>
-            ))}
-          </ul>
-        ))}
+        <ul className="exercise-list math-exercises">
+          {formatExercises(mathExercises)}
+        </ul>
       </div>
       <div className="section">
         <h2>Problèmes à résoudre</h2>
-        <ul className="problem-list">
-          {wordProblems.map((problem, index) => (
-            <li key={index}>{problem}</li>
-          ))}
+        <ul className="exercise-list word-problems">
+          {formatExercises(wordProblems)}
         </ul>
       </div>
       <div className="section">
         <h2>Mots en français à recopier</h2>
-        <ul className="word-list">
-          {wordsToCopy.map((word, index) => (
-            <li key={index}>{word}</li>
-          ))}
+        <ul className="exercise-list words-to-copy">
+          {formatExercises(wordsToCopy)}
         </ul>
       </div>
     </div>
