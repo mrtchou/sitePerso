@@ -234,7 +234,6 @@ const ChildTasks = () => {
 
     return formattedExercises;
   };
-
   return authenticated ? (
     <div className="container">
       <div className="section">
