@@ -24,7 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/Nos-Services" element={<Services />} />
-          <Route path="/child-tasks" element={<ChildTasks />} />
+          <Route path="/kamirs" element={<ChildTasks />} />
           <Route
             path="/password"
             element={<PasswordPage setPassword={setPassword} />}

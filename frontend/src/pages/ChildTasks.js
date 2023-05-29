@@ -219,8 +219,8 @@ const ChildTasks = () => {
   const formatExercises = (exercises) => {
     return exercises.map((exercise, index) => (
       <li key={index}>
-        <span className="line-number">{index + 1}</span>
-        <span className="exercise-content">({exercise})</span>
+        <span className="line-number">{index + 1} ) </span>
+        <span className="exercise-content">{exercise}</span>
       </li>
     ));
   };
