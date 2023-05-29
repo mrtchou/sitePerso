@@ -193,9 +193,8 @@ const ChildTasks = () => {
       "Dormir",
     ],
   ];
-
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * 3); // Sélectionne un index aléatoire entre 0 et 2.
+    const randomIndex = Math.floor(Math.random() * 3);
 
     setMathExercises(allMathExercises[randomIndex]);
     setWordProblems(allWordProblems[randomIndex]);
@@ -215,27 +214,49 @@ const ChildTasks = () => {
     }
   };
 
+  const formatExercises = (exercises) => {
+    const formattedExercises = [];
+    let group = [];
+
+    exercises.forEach((exercise, index) => {
+      group.push(exercise);
+
+      if ((index + 1) % 10 === 0) {
+        formattedExercises.push(group);
+        group = [];
+      }
+    });
+
+    if (group.length > 0) {
+      formattedExercises.push(group);
+    }
+
+    return formattedExercises;
+  };
+
   return authenticated ? (
-    <div>
-      <div>
+    <div className="container">
+      <div className="section">
         <h2>Exercices de mathématiques</h2>
-        <ul>
-          {mathExercises.map((exercise, index) => (
-            <li key={index}>{exercise}</li>
-          ))}
-        </ul>
+        {formatExercises(mathExercises).map((group, groupIndex) => (
+          <ul key={groupIndex} className="exercise-list">
+            {group.map((exercise, index) => (
+              <li key={index}>{exercise}</li>
+            ))}
+          </ul>
+        ))}
       </div>
-      <div>
+      <div className="section">
         <h2>Problèmes à résoudre</h2>
-        <ul>
+        <ul className="problem-list">
           {wordProblems.map((problem, index) => (
             <li key={index}>{problem}</li>
           ))}
         </ul>
       </div>
-      <div>
+      <div className="section">
         <h2>Mots en français à recopier</h2>
-        <ul>
+        <ul className="word-list">
           {wordsToCopy.map((word, index) => (
             <li key={index}>{word}</li>
           ))}
@@ -243,7 +264,7 @@ const ChildTasks = () => {
       </div>
     </div>
   ) : (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="login-form">
       <input
         type="password"
         value={password}
