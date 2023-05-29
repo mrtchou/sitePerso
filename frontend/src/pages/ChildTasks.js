@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../styles/ChildTasks.css";
 
 const ChildTasks = () => {
   const [password, setPassword] = useState("");
