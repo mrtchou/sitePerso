@@ -39,7 +39,7 @@ const Contact = () => {
 
       <br />
       <br />
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
         <label>
           Nom:
           <input
@@ -64,7 +64,7 @@ const Contact = () => {
           />
         </label>
         <input type="submit" value="Envoyer" />
-      </form>
+      </form> */}
     </div>
   );
 };
