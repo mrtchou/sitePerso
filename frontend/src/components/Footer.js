@@ -30,7 +30,7 @@ const Footer = () => {
           Business Evolution - Progressive Advancement Group
           <br />
           <br />
-          Développement Web de premier plan
+          Développement Web
         </p>
       </div>
       <div className="footer-right">
@@ -55,13 +55,10 @@ const Footer = () => {
           <h4>Réseaux sociaux</h4>
           <ul className="socials">
             <li>
-              <a href="https://www.facebook.com">Facebook</a>
+              <a href="https://twitter.com/leGrandDev">Twitter</a>
             </li>
             <li>
-              <a href="https://twitter.com">Twitter</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/bepag/">LinkedIn</a>
             </li>
             <li>
               <a href="https://www.instagram.com">Instagram</a>
