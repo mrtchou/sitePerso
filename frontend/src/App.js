@@ -30,7 +30,7 @@ function App() {
             element={<PasswordPage setPassword={setPassword} />}
           />
           <Route
-            path="/child-tasks"
+            path="/kamirs"
             element={
               password === "12345" ? (
                 <ChildTasks />

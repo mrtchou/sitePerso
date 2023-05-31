@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // Utilisation de bodyParser pour analyser le corps des requêtes au format JSON
 app.use(express.json());
-
+app.use(express.static("build"));
 // Route de base pour afficher "Hello World!"
 app.get("/", (req, res) => {
   res.send("Hello World!");
