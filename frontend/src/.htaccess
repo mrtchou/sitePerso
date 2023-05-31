@@ -1,0 +1,14 @@
+# Activation du module de réécriture d'URL
+RewriteEngine On
+
+# Définition de la base de la réécriture (racine du site)
+RewriteBase /
+
+# Vérification que le fichier demandé n'existe pas
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Vérification que le répertoire demandé n'existe pas
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Réécriture de toutes les requêtes vers index.html
+RewriteRule ^(.*)$ index.html [L]
