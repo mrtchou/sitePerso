@@ -1,8 +1,9 @@
+
 header {
   background-image: url('../assets/header-image.jpg');
   background-position: center;
-  background-size:cover;
-  height: 89vh;
+  background-size: cover;
+  height: 50vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -11,6 +12,12 @@ header {
   background-repeat: no-repeat;
 }
 
+/* Styles pour les appareils mobiles et tablettes */
+@media screen and (max-width: 768px) {
+  header {
+    height: 30vh;
+  }
+}
 
 .navbar {
   box-sizing: border-box;
