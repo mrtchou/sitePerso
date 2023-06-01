@@ -8,19 +8,7 @@ footer {
   flex-wrap: wrap;
 }
 
-/* Styles pour les appareils mobiles et tablettes */
-@media screen and (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .footer-left,
-  .footer-center,
-  .footer-right {
-    margin-bottom: 20px;
-  }
-}
   
   .footer-left,
   .footer-center,
@@ -73,3 +61,18 @@ footer {
     border-top: 1px solid #C5C6C7;
   }
   
+
+
+  /* Styles pour les appareils mobiles et tablettes */
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin-bottom: 20px;
+  }
+}
