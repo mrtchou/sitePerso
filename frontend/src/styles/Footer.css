@@ -1,12 +1,26 @@
 footer {
-    background-color: #1F2833;
-    color: #C5C6C7;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: wrap;
+  background-color: #1F2833;
+  color: #C5C6C7;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+/* Styles pour les appareils mobiles et tablettes */
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin-bottom: 20px;
+  }
+}
   
   .footer-left,
   .footer-center,
