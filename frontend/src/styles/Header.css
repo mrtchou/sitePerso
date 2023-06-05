@@ -78,13 +78,17 @@ header {
 }
 
 
+ /* Ajustez la largeur selon vos besoins */
+ /* Ajustez le padding selon vos besoins */
 
 
 
 .header-content {
   text-align: center;
+  width: 80%;
+  font-size: 0.9rem;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   opacity: 0; 
   transition: opacity 2s ease-in-out;
