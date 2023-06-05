@@ -36,7 +36,7 @@ header {
 }
 
 .navbar-scrolled {
-  height: 7vh; /* or whatever height you want */
+  height: 7vh; 
   transition: 0.3s ease;
 }
 
@@ -86,27 +86,27 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
-  opacity: 0; /* Rend le contenu transparent */
-  transition: opacity 2s ease-in-out; /* Spécifie la transition à appliquer à la propriété opacity */
+  opacity: 0; 
+  transition: opacity 2s ease-in-out;
 }
 
 .header-content.visible {
-  opacity: 1; /* Rend le contenu opaque */
+  opacity: 1; 
 }
 .header-content h2 {
   color: white;
   margin: 0;
 }
 .header-content p {
-  color: white; /* Couleur du texte */
-  font-size: 1.2em; /* Taille du texte */
-  line-height: 1.6em; /* Espacement des lignes */
-  text-align:center; /* Alignement du texte */
-  padding: 15px; /* Espacement interne */
-  margin: 15px 0; /* Espacement externe */
-  background-color: rgba(3, 38, 95, 0.6); /* Arrière-plan semi-transparent */
-  border-radius: 5px; /* Coins arrondis */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre de texte */
+  color: white; 
+  font-size: 1.2em; 
+  line-height: 1.6em; 
+  text-align:center; 
+  padding: 15px; 
+  margin: 15px 0; 
+  background-color: rgba(3, 38, 95, 0.6); 
+  border-radius: 5px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   width: 40vw;
 }
 
@@ -116,7 +116,7 @@ header {
 }
 
 .hoverable-letter:hover {
-  transform: scale(1.5); /* ajustez le facteur d'échelle au besoin */
+  transform: scale(1.5); 
   color: red;
 }
 
