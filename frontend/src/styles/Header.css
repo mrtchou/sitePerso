@@ -49,34 +49,14 @@ header {
   letter-spacing: 2px; 
 }
 
-.menu {
-  display: flex;
-  flex-wrap: wrap; 
-  list-style-type: none;
-  padding: 0;
-}
 
-.menu li {
-  margin-left: 1rem;
-  transition: transform 0.3s ease; 
-}
 
-.menu li:hover {
-  transform: scale(1.2);
-}
 
-.menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  transition: color 0.3s ease; 
-}
 
-.menu a:hover {
-  color: #ffd700;
-  font:bold;
 
-}
+
+
+
 
 
 .header-content {
@@ -156,4 +136,99 @@ header {
     border-radius: 5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+
+
+
+
+.hamburger {
+  display: none; /* Masque le bouton hamburger par défaut */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Animation pour ouvrir le menu */
+.hamburger.open .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap; 
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 1rem;
+  transition: transform 0.3s ease; 
+}
+
+.menu li:hover {
+  transform: scale(1.2);
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease; 
+}
+
+.menu a:hover {
+  color: #ffd700;
+  font:bold;
+
+}
+
+
+.menu.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.menu.open li {
+  margin: 1rem;
+}
+
+.menu.open a {
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu.open a:hover {
+  color: #ffd700;
+  font-weight: bold;
+}
+
 }

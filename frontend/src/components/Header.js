@@ -7,6 +7,8 @@ import "../styles/Header.css";
 const Header = ({ small }) => {
   // Obtenez l'emplacement actuel (URL) grâce au hook useLocation
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   // Initialisation d'un état pour gérer la visibilité du contenu de l'en-tête
   const [isVisible, setIsVisible] = useState(false);
 
@@ -48,7 +50,8 @@ const Header = ({ small }) => {
         />
       </Helmet>
       {/* Barre de navigation */}
-      <nav className={`navbar`}>
+      <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
+        {" "}
         <div className="logo">
           {/* Le logo est généré lettre par lettre */}
           <h1>
@@ -61,8 +64,17 @@ const Header = ({ small }) => {
             ))}
           </h1>
         </div>
+        {/* Bouton hamburger */}
+        <button
+          className="hamburger"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </button>
         {/* Menu */}
-        <ul className="menu">
+        <ul className={`menu ${isMenuOpen ? "open" : ""}`}>
           {/* On utilise le composant Link pour la navigation dans l'application. */}
           <li>
             <Link to="/">Accueil</Link>
