@@ -79,10 +79,6 @@ header {
 }
 
 
- /* Ajustez la largeur selon vos besoins */
- /* Ajustez le padding selon vos besoins */
-
-
 
 .header-content {
   text-align: center;
@@ -143,5 +139,24 @@ header {
 @media screen and (max-width: 768px) {
   header {
     height: 30vh;
+  }
+
+  .header-content {
+    width: auto;
+    height: auto;
+    background-color: rgba(3, 38, 95, 0.6); 
+    border-radius: 10px;
+    opacity: 0; 
+    transition: opacity 2s ease-in-out;
+  }
+
+
+  .header-content p {
+    font-size: 1em; 
+    line-height: 1.1em; 
+    text-align:center;
+    padding: 15px; 
+    margin: 0; 
+    background-color: rgba(3, 38, 95, 0.6); 
   }
 }

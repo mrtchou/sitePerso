@@ -79,9 +79,7 @@ const Header = ({ small }) => {
         </ul>
       </nav>
 
-      {/* Contenu de l'en-tête */}
       <div className={`header-content ${isVisible ? "visible" : ""}`}>
-        {/* Texte principal */}
         <p>
           <strong>BEPAG</strong>, votre partenaire pour des solutions web sur
           mesure.
