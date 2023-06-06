@@ -131,41 +131,29 @@ header {
   text-decoration: none;
 }
 
-
-/* Styles pour les appareils mobiles et tablettes */
 @media screen and (max-width: 768px) {
-  header {
-    height: 43vh;
+  .header-content.visible {
+    opacity: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
   }
-
-
-
   
-
-
-.header-content.visible {
-  opacity: 1; 
-  box-sizing: border-box;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding-top: 10px;
-
-}
-.header-content h2 {
-  color: white;
-  margin: 0;
-}
-.header-content p {
-  padding-top: 0px;
-  color: white; /* Couleur du texte */
-  font-size: 0.9em; /* Taille du texte */
-  line-height: 1.3em; /* Espacement des lignes */
-  text-align:center; /* Alignement du texte */
-  background-color: rgba(3, 38, 95, 0.6); /* Arrière-plan semi-transparent */
-  border-radius: 5px; /* Coins arrondis */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre de texte */
-  height:15vh;
-}
-
+  .header-content h2 {
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .header-content p {
+    color: white;
+    font-size: 1em;
+    line-height: 1.3em;
+    text-align: center;
+    background-color: rgba(3, 38, 95, 0.6);
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }
