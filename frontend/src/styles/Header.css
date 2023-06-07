@@ -11,6 +11,8 @@ header {
   background-repeat: no-repeat;
 }
 
+
+
 .navbar {
   box-sizing: border-box;
   display: flex;
@@ -22,9 +24,10 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100; /* Correction de la valeur du z-index */
+  z-index: 10;
   transition: background-color 0.2s ease;
   height: 8vh;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar:hover {
@@ -36,6 +39,7 @@ header {
   transition: 0.3s ease;
 }
 
+
 .logo {
   color: white;
   font-size: 1.2rem;
@@ -44,36 +48,72 @@ header {
   letter-spacing: 2px; 
 }
 
+.menu {
+  display: flex;
+  flex-wrap: wrap; 
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 1rem;
+  transition: transform 0.3s ease; 
+}
+
+.menu li:hover {
+  transform: scale(1.2);
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease; 
+}
+
+.menu a:hover {
+  color: #ffd700;
+  font:bold;
+
+}
+
+
+ /* Ajustez la largeur selon vos besoins */
+ /* Ajustez le padding selon vos besoins */
+
+
+
 .header-content {
-  text-align: center;
+  text-align: -webkit-center;
+  width: 80%;
+  font-size: 0.9rem;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
   border-radius: 10px;
-  opacity: 0;
+  opacity: 0; 
   transition: opacity 2s ease-in-out;
 }
 
 .header-content.visible {
-  opacity: 1;
+  opacity: 1; 
 }
-
 .header-content h2 {
   color: white;
   margin: 0;
 }
-
 .header-content p {
-  color: white;
-  font-size: 1.2em;
-  line-height: 1.6em;
-  text-align: center;
-  padding: 15px;
-  margin: 15px 0;
-  background-color: rgba(3, 38, 95, 0.6);
-  border-radius: 5px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+  color: white; 
+  font-size: 1.2em; 
+  line-height: 1.6em; 
+  text-align:center; 
+  padding: 15px; 
+  margin: 15px 0; 
+  background-color: rgba(3, 38, 95, 0.6); 
+  border-radius: 5px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   width: 40vw;
 }
+
 
 .hoverable-letter {
   transition: transform 0.3s ease;
@@ -84,11 +124,11 @@ header {
   color: red;
 }
 
-.escape-div {
-  transition: "transform 0.5s ease-out";
+.escape-div{
+  transition: "transform 0.5s ease-out"
 }
 
-.header-small {
+.header-small{
   height: 53vh;
 }
 
@@ -96,6 +136,7 @@ header {
   color: inherit;
   text-decoration: none;
 }
+
 
 @media screen and (max-width: 768px) {
   .header-content.visible {
