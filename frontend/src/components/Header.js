@@ -64,16 +64,14 @@ const Header = ({ small }) => {
             ))}
           </h1>
         </div>
-        {/* Bouton hamburger */}
         <button
-          className="hamburger"
+          className={`hamburger ${isMenuOpen ? "open" : ""}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span className="hamburger-line"></span>
           <span className="hamburger-line"></span>
           <span className="hamburger-line"></span>
         </button>
-        {/* Menu */}
         <ul className={`menu ${isMenuOpen ? "open" : ""}`}>
           {/* On utilise le composant Link pour la navigation dans l'application. */}
           <li>
