@@ -73,6 +73,7 @@ const Header = ({ small }) => {
           <span className="hamburger-line"></span>
         </button>
         <ul className={`menu ${isMenuOpen ? "open" : ""}`}>
+          {" "}
           {/* On utilise le composant Link pour la navigation dans l'application. */}
           <li>
             <Link to="/">Accueil</Link>
