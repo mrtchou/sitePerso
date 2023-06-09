@@ -84,13 +84,19 @@ const Header = ({ small }) => {
             </Link>
           </li>
           <li>
-            <Link to="/about">À propos</Link>
+            <Link to="/about" onClick={handleLinkClick}>
+              À propos
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={handleLinkClick}>
+              Contact
+            </Link>
           </li>
           <li>
-            <Link to="/Nos-Services">Nos Services</Link>
+            <Link to="/Nos-Services" onClick={handleLinkClick}>
+              Nos Services
+            </Link>
           </li>
         </ul>
       </nav>
