@@ -8,6 +8,9 @@ const Header = ({ small }) => {
   // Obtenez l'emplacement actuel (URL) grâce au hook useLocation
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
 
   // Initialisation d'un état pour gérer la visibilité du contenu de l'en-tête
   const [isVisible, setIsVisible] = useState(false);
@@ -76,7 +79,9 @@ const Header = ({ small }) => {
           {" "}
           {/* On utilise le composant Link pour la navigation dans l'application. */}
           <li>
-            <Link to="/">Accueil</Link>
+            <Link to="/" onClick={handleLinkClick}>
+              Accueil
+            </Link>
           </li>
           <li>
             <Link to="/about">À propos</Link>
