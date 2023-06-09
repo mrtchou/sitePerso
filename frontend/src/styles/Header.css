@@ -220,8 +220,8 @@ header {
 
   .menu.open a {
     color: white;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+    font-size: 1.7rem;
+    transition: color 0.9s ease;
   }
 
   .menu.open a:hover {
